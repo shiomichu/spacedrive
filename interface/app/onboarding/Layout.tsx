@@ -1,13 +1,12 @@
 import { BloomOne } from '@sd/assets/images';
 import { introvideobg, introvideobgmp4, sdintro, sdintromp4 } from '@sd/assets/videos';
+import { useOperatingSystem, useWindowSize } from '@sd/web-core';
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import { Navigate, Outlet } from 'react-router';
 import { useDebugState } from '@sd/client';
 import DragRegion from '~/components/DragRegion';
-import { useWindowSize } from '~/hooks';
-import { useOperatingSystem } from '~/hooks/useOperatingSystem';
 
 import DebugPopover from '../$libraryId/Layout/Sidebar/DebugPopover';
 import { macOnly } from '../$libraryId/Layout/Sidebar/helpers';

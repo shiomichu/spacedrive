@@ -1,9 +1,7 @@
 import { fda } from '@sd/assets/videos';
+import { Icon, useLocale, usePlatform } from '@sd/web-core';
 import { useNavigate } from 'react-router';
 import { Button } from '@sd/ui';
-import { Icon } from '~/components';
-import { useLocale } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import { OnboardingContainer, OnboardingDescription, OnboardingTitle } from './components';
 

@@ -8,6 +8,7 @@ import {
 	Image
 } from '@phosphor-icons/react';
 import { ReactComponent as Ellipsis } from '@sd/assets/svgs/ellipsis.svg';
+import { useLocale } from '@sd/web-core';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useLibraryMutation, type Location } from '@sd/client';
@@ -24,7 +25,6 @@ import {
 	tw,
 	usePopover
 } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 import TopBarButton from '../TopBar/TopBarButton';
 

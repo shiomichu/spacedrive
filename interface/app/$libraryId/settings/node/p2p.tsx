@@ -1,5 +1,5 @@
+import { useLocale } from '@sd/web-core';
 import { Input, Switch } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 import { Heading } from '../Layout';
 import Setting from '../Setting';

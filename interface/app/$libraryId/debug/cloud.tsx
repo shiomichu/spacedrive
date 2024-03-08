@@ -1,8 +1,8 @@
+import { useRouteTitle } from '@sd/web-core';
 import { auth, useLibraryContext, useLibraryMutation, useLibraryQuery } from '@sd/client';
 import { Button } from '@sd/ui';
 import { AuthRequiredOverlay } from '~/components/AuthRequiredOverlay';
 import { LoginButton } from '~/components/LoginButton';
-import { useRouteTitle } from '~/hooks';
 
 export const Component = () => {
 	useRouteTitle('Cloud');

@@ -1,14 +1,11 @@
 import { EjectSimple } from '@phosphor-icons/react';
+import { useExplorerDroppable, useExplorerSearchParams } from '@sd/explorer';
+import { Icon, IconName, useHomeDir, useLocale } from '@sd/web-core';
 import clsx from 'clsx';
 import { PropsWithChildren, useMemo } from 'react';
 import { useBridgeQuery, useCache, useLibraryQuery, useNodes } from '@sd/client';
 import { Button, toast, tw } from '@sd/ui';
-import { Icon, IconName } from '~/components';
-import { useLocale } from '~/hooks';
-import { useHomeDir } from '~/hooks/useHomeDir';
 
-import { useExplorerDroppable } from '../../../../Explorer/useExplorerDroppable';
-import { useExplorerSearchParams } from '../../../../Explorer/util';
 import SidebarLink from '../../SidebarLayout/Link';
 import Section from '../../SidebarLayout/Section';
 import { SeeMore } from '../../SidebarLayout/SeeMore';

@@ -1,7 +1,6 @@
+import { useLocale, useRouteTitle } from '@sd/web-core';
 import { Link } from 'react-router-dom';
 import { useBridgeQuery, useCache, useLibraryQuery, useNodes } from '@sd/client';
-import { useLocale } from '~/hooks';
-import { useRouteTitle } from '~/hooks/useRouteTitle';
 import { hardwareModelToIcon } from '~/util/hardware';
 
 import { SearchContextProvider, useSearch } from '../search';

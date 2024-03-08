@@ -1,6 +1,6 @@
 import { Clock, Heart, Planet, Tag } from '@phosphor-icons/react';
+import { useLocale } from '@sd/web-core';
 import { useLibraryQuery } from '@sd/client';
-import { useLocale } from '~/hooks';
 
 import Icon from '../../SidebarLayout/Icon';
 import SidebarLink from '../../SidebarLayout/Link';

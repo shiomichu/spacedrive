@@ -1,9 +1,8 @@
+import { i18n, Shortcuts, shortcutsStore, useLocale, useOperatingSystem } from '@sd/web-core';
 import { ColumnDef, flexRender, getCoreRowModel, useReactTable } from '@tanstack/react-table';
 import clsx from 'clsx';
 import { useMemo } from 'react';
 import { keySymbols, modifierSymbols } from '@sd/ui';
-import i18n from '~/app/I18n';
-import { Shortcuts, shortcutsStore, useLocale, useOperatingSystem } from '~/hooks';
 
 import { Heading } from '../Layout';
 

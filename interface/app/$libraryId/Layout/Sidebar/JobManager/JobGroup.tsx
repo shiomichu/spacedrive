@@ -1,5 +1,6 @@
 import { DotsThreeVertical, Eye, Pause, Play, Stop, Trash } from '@phosphor-icons/react';
 import { Folder } from '@sd/assets/icons';
+import { useLocale } from '@sd/web-core';
 import { useQueryClient } from '@tanstack/react-query';
 import clsx from 'clsx';
 import dayjs from 'dayjs';
@@ -15,7 +16,6 @@ import {
 	useTotalElapsedTimeText
 } from '@sd/client';
 import { Button, Dropdown, ProgressBar, toast, Tooltip } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 import Job from './Job';
 import JobContainer from './JobContainer';

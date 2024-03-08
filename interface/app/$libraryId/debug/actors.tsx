@@ -1,8 +1,8 @@
 import { inferSubscriptionResult } from '@oscartbeaumont-sd/rspc-client';
+import { useRouteTitle } from '@sd/web-core';
 import { useMemo, useState } from 'react';
 import { Procedures, useLibraryMutation, useLibrarySubscription } from '@sd/client';
 import { Button } from '@sd/ui';
-import { useRouteTitle } from '~/hooks/useRouteTitle';
 
 // @million-ignore
 export const Component = () => {

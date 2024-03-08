@@ -1,4 +1,5 @@
 import { createMemoryHistory } from '@remix-run/router';
+import { KeybindEvent, PlatformProvider, RouteTitleContext, useLocale } from '@sd/web-core';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { listen } from '@tauri-apps/api/event';
 import { PropsWithChildren, startTransition, useEffect, useMemo, useRef, useState } from 'react';
@@ -7,17 +8,12 @@ import { CacheProvider, createCache, RspcProvider } from '@sd/client';
 import {
 	createRoutes,
 	ErrorPage,
-	KeybindEvent,
-	PlatformProvider,
 	SpacedriveInterfaceRoot,
 	SpacedriveRouterProvider,
 	TabsContext
 } from '@sd/interface';
-import { RouteTitleContext } from '@sd/interface/hooks/useRouteTitle';
 
 import '@sd/ui/style/style.scss';
-
-import { useLocale } from '@sd/interface/hooks';
 
 import { commands } from './commands';
 import { platform } from './platform';

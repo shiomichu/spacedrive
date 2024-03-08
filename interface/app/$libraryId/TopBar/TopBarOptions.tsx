@@ -1,7 +1,7 @@
+import { useIsDark, useOperatingSystem } from '@sd/web-core';
 import clsx from 'clsx';
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { ModifierKeys, Popover, Tooltip, usePopover } from '@sd/ui';
-import { useIsDark, useOperatingSystem } from '~/hooks';
 
 import TopBarButton from './TopBarButton';
 import TopBarMobile from './TopBarMobile';

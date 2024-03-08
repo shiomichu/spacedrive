@@ -1,9 +1,9 @@
+import { explorerStore } from '@sd/explorer';
 import { createContext, useContext, useEffect, useState } from 'react';
 import { Outlet } from 'react-router';
 import { SearchFilterArgs } from '@sd/client';
 
 import TopBar from '.';
-import { explorerStore } from '../Explorer/store';
 
 const TopBarContext = createContext<ReturnType<typeof useContextValue> | null>(null);
 

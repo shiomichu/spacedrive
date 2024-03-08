@@ -1,7 +1,7 @@
+import { InfoPill } from '@sd/explorer/src/Inspector';
 import clsx from 'clsx';
 import { useRef } from 'react';
 import { IndexerRule } from '@sd/client';
-import { InfoPill } from '~/app/$libraryId/Explorer/Inspector';
 
 import { IndexerRuleIdFieldType } from '.';
 

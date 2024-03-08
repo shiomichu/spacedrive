@@ -1,8 +1,7 @@
 import { AlphaBg, AlphaBg_Light, AppLogo } from '@sd/assets/images';
 import { Discord } from '@sd/assets/svgs/brands';
+import { useIsDark, useLocale, usePlatform } from '@sd/web-core';
 import { Button, ButtonLink } from '@sd/ui';
-import { useIsDark, useLocale } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import { OnboardingContainer } from './components';
 

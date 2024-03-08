@@ -1,10 +1,9 @@
 import { Envelope, User } from '@phosphor-icons/react';
+import { TruncatedText, useLocale } from '@sd/web-core';
 import { useEffect, useState } from 'react';
 import { auth, useBridgeMutation, useBridgeQuery, useFeatureFlag } from '@sd/client';
 import { Button, Card, Input, toast } from '@sd/ui';
-import { TruncatedText } from '~/components';
 import { AuthRequiredOverlay } from '~/components/AuthRequiredOverlay';
-import { useLocale } from '~/hooks';
 
 import { Heading } from '../Layout';
 

@@ -42,7 +42,7 @@ export const useCachedLibraries = () => {
 export async function getCachedLibraries(cache: NormalisedCache, client: AlphaClient<Procedures>) {
 	const cachedData = localStorage.getItem(libraryCacheLocalStorageKey);
 
-	const libraries =  client.query(['library.list']).then(result => {
+	const libraries = client.query(['library.list']).then((result) => {
 		cache.withNodes(result.nodes);
 		const libraries = cache.withCache(result.items);
 
@@ -61,7 +61,6 @@ export async function getCachedLibraries(cache: NormalisedCache, client: AlphaCl
 			console.error("Error loading cached 'sd-library-list' data", e);
 		}
 	}
-
 
 	return await libraries;
 }

@@ -1,10 +1,9 @@
+import { keybindForOs, useOperatingSystem } from '@sd/web-core';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { createSearchParams } from 'react-router-dom';
 import { useDebouncedCallback } from 'use-debounce';
 import { Input, ModifierKeys, Shortcut } from '@sd/ui';
-import { useOperatingSystem } from '~/hooks';
-import { keybindForOs } from '~/util/keybinds';
 
 import { useSearchContext } from './context';
 import { useSearchStore } from './store';

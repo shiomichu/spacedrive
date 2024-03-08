@@ -100,6 +100,9 @@ importers:
       '@sd/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@sd/web-core':
+        specifier: workspace:^
+        version: link:../../packages/web-core
       '@t3-oss/env-core':
         specifier: ^0.7.1
         version: 0.7.3(typescript@5.3.3)(zod@3.22.4)
@@ -598,6 +601,9 @@ importers:
       '@sd/interface':
         specifier: workspace:*
         version: link:../../interface
+      '@sd/web-core':
+        specifier: workspace:^
+        version: link:../../packages/web-core
       '@tanstack/react-query':
         specifier: ^4.36.1
         version: 4.36.1(react-dom@18.2.0)(react-native@0.73.4)(react@18.2.0)
@@ -698,9 +704,15 @@ importers:
       '@sd/client':
         specifier: workspace:*
         version: link:../packages/client
+      '@sd/explorer':
+        specifier: workspace:^
+        version: link:../packages/explorer
       '@sd/ui':
         specifier: workspace:*
         version: link:../packages/ui
+      '@sd/web-core':
+        specifier: workspace:^
+        version: link:../packages/web-core
       '@sentry/browser':
         specifier: ^7.74.1
         version: 7.103.0
@@ -980,6 +992,27 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0(typescript@5.3.3)(vite@4.5.2)
 
+  packages/explorer:
+    dependencies:
+      '@phosphor-icons/react':
+        specifier: ^2.0.15
+        version: 2.0.15(react-dom@18.2.0)(react@18.2.0)
+      '@sd/assets':
+        specifier: workspace:^
+        version: link:../assets
+      '@sd/client':
+        specifier: workspace:^
+        version: link:../client
+      '@sd/ui':
+        specifier: workspace:^
+        version: link:../ui
+      '@sd/web-core':
+        specifier: workspace:^
+        version: link:../web-core
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+
   packages/ui:
     dependencies:
       '@headlessui/react':
@@ -1106,6 +1139,24 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
+
+  packages/web-core:
+    dependencies:
+      '@phosphor-icons/react':
+        specifier: ^2.0.15
+        version: 2.0.15(react-dom@18.2.0)(react@18.2.0)
+      '@sd/assets':
+        specifier: workspace:^
+        version: link:../assets
+      '@sd/client':
+        specifier: workspace:^
+        version: link:../client
+      '@sd/ui':
+        specifier: workspace:^
+        version: link:../ui
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
 
   scripts:
     dependencies:
@@ -3097,6 +3148,10 @@ packages:
     peerDependencies:
       '@effect-ts/otel-node': '*'
     peerDependenciesMeta:
+      '@effect-ts/core':
+        optional: true
+      '@effect-ts/otel':
+        optional: true
       '@effect-ts/otel-node':
         optional: true
     dependencies:

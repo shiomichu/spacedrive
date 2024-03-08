@@ -1,7 +1,7 @@
+import { useLocale } from '@sd/web-core';
 import { auth, useBridgeQuery } from '@sd/client';
 import { Button, Card } from '@sd/ui';
 import { AuthRequiredOverlay } from '~/components/AuthRequiredOverlay';
-import { useLocale } from '~/hooks';
 
 export function SpacedriveAccount() {
 	return (

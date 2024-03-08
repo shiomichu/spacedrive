@@ -1,4 +1,5 @@
 import { CheckSquare } from '@phosphor-icons/react';
+import { toggleRenderRects, usePlatform } from '@sd/web-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { useNavigate } from 'react-router';
 import {
@@ -22,8 +23,6 @@ import {
 	Switch,
 	usePopover
 } from '@sd/ui';
-import { toggleRenderRects } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import Setting from '../../settings/Setting';
 

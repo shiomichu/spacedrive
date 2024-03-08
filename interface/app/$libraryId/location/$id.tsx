@@ -1,4 +1,26 @@
 import { ArrowClockwise, Info } from '@phosphor-icons/react';
+import {
+	createDefaultExplorerSettings,
+	EmptyNotice,
+	Explorer,
+	ExplorerContextProvider,
+	filePathOrderingKeysSchema,
+	useExplorerSearchParams,
+	UseExplorerSettings,
+	useExplorerSettings,
+	useKeyDeleteFile,
+	usePathsExplorerQuery,
+	useQuickRescan
+} from '@sd/explorer';
+import {
+	Folder,
+	Icon,
+	useIsLocationIndexing,
+	useLocale,
+	useRouteTitle,
+	useShortcut,
+	useZodRouteParams
+} from '@sd/web-core';
 import { useEffect, useMemo } from 'react';
 import { useSearchParams as useRawSearchParams } from 'react-router-dom';
 import { stringify } from 'uuid';
@@ -18,29 +40,13 @@ import {
 } from '@sd/client';
 import { Loader, Tooltip } from '@sd/ui';
 import { LocationIdParamsSchema } from '~/app/route-schemas';
-import { Folder, Icon } from '~/components';
-import {
-	useIsLocationIndexing,
-	useKeyDeleteFile,
-	useLocale,
-	useRouteTitle,
-	useShortcut,
-	useZodRouteParams
-} from '~/hooks';
-import { useQuickRescan } from '~/hooks/useQuickRescan';
 
-import Explorer from '../Explorer';
-import { ExplorerContextProvider } from '../Explorer/Context';
-import { usePathsExplorerQuery } from '../Explorer/queries';
-import { createDefaultExplorerSettings, filePathOrderingKeysSchema } from '../Explorer/store';
-import { DefaultTopBarOptions } from '../Explorer/TopBarOptions';
-import { useExplorer, UseExplorerSettings, useExplorerSettings } from '../Explorer/useExplorer';
-import { useExplorerSearchParams } from '../Explorer/util';
-import { EmptyNotice } from '../Explorer/View/EmptyNotice';
+import { DefaultTopBarOptions } from '../Layout/TopBarOptions';
 import { SearchContextProvider, SearchOptions, useSearch } from '../search';
 import SearchBar from '../search/SearchBar';
 import { TopBarPortal } from '../TopBar/Portal';
 import { TOP_BAR_ICON_STYLE } from '../TopBar/TopBarOptions';
+import { useLibraryExplorer } from '../useLibraryExplorer';
 import LocationOptions from './LocationOptions';
 
 export const Component = () => {
@@ -92,7 +98,7 @@ const LocationExplorer = ({ location }: { location: Location; path?: string }) =
 		explorerSettings
 	});
 
-	const explorer = useExplorer({
+	const explorer = useLibraryExplorer({
 		...paths,
 		isFetchingNextPage: paths.query.isFetchingNextPage,
 		isLoadingPreferences: preferences.isLoading,

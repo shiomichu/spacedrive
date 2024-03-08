@@ -1,3 +1,4 @@
+import { useRouteTitle } from '@sd/web-core';
 import { useMemo } from 'react';
 import { stringify } from 'uuid';
 import {
@@ -8,7 +9,6 @@ import {
 	useLibrarySubscription
 } from '@sd/client';
 import { Button } from '@sd/ui';
-import { useRouteTitle } from '~/hooks/useRouteTitle';
 
 type MessageGroup = {
 	model: string;

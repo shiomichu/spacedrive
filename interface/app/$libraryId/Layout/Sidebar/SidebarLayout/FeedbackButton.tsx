@@ -1,10 +1,9 @@
+import { i18n, useLocale } from '@sd/web-core';
 import clsx from 'clsx';
 import { Controller } from 'react-hook-form';
 import { auth, useBridgeMutation, useZodForm } from '@sd/client';
 import { Button, Form, Popover, TextAreaField, toast, usePopover, z } from '@sd/ui';
-import i18n from '~/app/I18n';
 import { LoginButton } from '~/components/LoginButton';
-import { useLocale } from '~/hooks';
 
 const schema = z.object({
 	message: z.string().min(1, { message: i18n.t('feedback_is_required') }),

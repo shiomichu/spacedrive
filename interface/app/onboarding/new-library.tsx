@@ -1,9 +1,8 @@
+import { Icon, useLocale, useOperatingSystem } from '@sd/web-core';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useFeatureFlag } from '@sd/client';
 import { Button, Form, InputField } from '@sd/ui';
-import { Icon } from '~/components';
-import { useLocale, useOperatingSystem } from '~/hooks';
 
 import { OnboardingContainer, OnboardingDescription, OnboardingTitle } from './components';
 import { useOnboardingContext } from './context';

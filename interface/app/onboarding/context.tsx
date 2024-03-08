@@ -1,3 +1,4 @@
+import { i18n, usePlatform } from '@sd/web-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { createContext, useContext } from 'react';
 import { useNavigate } from 'react-router';
@@ -16,9 +17,6 @@ import {
 	usePlausibleEvent
 } from '@sd/client';
 import { RadioGroupField, z } from '@sd/ui';
-import { usePlatform } from '~/util/Platform';
-
-import i18n from '../I18n';
 
 export const OnboardingContext = createContext<ReturnType<typeof useContextValue> | null>(null);
 

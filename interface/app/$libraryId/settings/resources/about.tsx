@@ -1,11 +1,9 @@
 import { Globe } from '@phosphor-icons/react';
 import { AppLogo } from '@sd/assets/images';
 import { Discord, Github } from '@sd/assets/svgs/brands';
+import { useLocale, useOperatingSystem, usePlatform } from '@sd/web-core';
 import { useBridgeQuery, useDebugStateEnabler } from '@sd/client';
 import { Button, Divider } from '@sd/ui';
-import { useLocale } from '~/hooks';
-import { useOperatingSystem } from '~/hooks/useOperatingSystem';
-import { usePlatform } from '~/util/Platform';
 
 export const Component = () => {
 	const buildInfo = useBridgeQuery(['buildInfo']);

@@ -1,10 +1,9 @@
 import { CheckCircle } from '@phosphor-icons/react';
+import { useLocale, usePlatform } from '@sd/web-core';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 import { Themes, unitFormatStore, useThemeStore, useUnitFormatStore, useZodForm } from '@sd/client';
 import { Button, Divider, Form, Select, SelectOption, SwitchField, z } from '@sd/ui';
-import { useLocale } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import HorizontalScroll from '../../overview/Layout/HorizontalScroll';
 import { Heading } from '../Layout';

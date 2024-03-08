@@ -1,4 +1,5 @@
 import { Pencil, Plus, Trash } from '@phosphor-icons/react';
+import { useLocale, usePlatform } from '@sd/web-core';
 import { PropsWithChildren } from 'react';
 import { useNavigate } from 'react-router';
 import { useLibraryContext } from '@sd/client';
@@ -6,8 +7,6 @@ import { ContextMenu as CM, dialogManager, toast } from '@sd/ui';
 import { AddLocationDialog } from '~/app/$libraryId/settings/library/locations/AddLocationDialog';
 import DeleteDialog from '~/app/$libraryId/settings/library/locations/DeleteDialog';
 import { openDirectoryPickerDialog } from '~/app/$libraryId/settings/library/locations/openDirectoryPickerDialog';
-import { useLocale } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 export const ContextMenu = ({
 	children,

@@ -1,0 +1,13 @@
+{
+	"name": "@sd/explorer",
+	"main": "src/index.tsx",
+	"types": "src/index.tsx",
+	"dependencies": {
+		"@phosphor-icons/react": "^2.0.15",
+		"@sd/assets": "workspace:^",
+		"@sd/client": "workspace:^",
+		"@sd/ui": "workspace:^",
+		"@sd/web-core": "workspace:^",
+		"react": "^18.2.0"
+	}
+}

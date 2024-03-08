@@ -1,18 +1,22 @@
+import {
+	createDefaultExplorerSettings,
+	EmptyNotice,
+	Explorer,
+	ExplorerContextProvider,
+	objectOrderingKeysSchema,
+	UseExplorerSettings,
+	useExplorerSettings,
+	useObjectsExplorerQuery
+} from '@sd/explorer';
+import { Icon, useRouteTitle } from '@sd/web-core';
 import { useEffect, useMemo } from 'react';
 import { useSearchParams as useRawSearchParams } from 'react-router-dom';
 import { ObjectKindEnum, ObjectOrder } from '@sd/client';
-import { Icon } from '~/components';
-import { useRouteTitle } from '~/hooks';
 
 import { SearchContextProvider, SearchOptions, useSearch } from '.';
-import Explorer from '../Explorer';
-import { ExplorerContextProvider } from '../Explorer/Context';
-import { useObjectsExplorerQuery } from '../Explorer/queries/useObjectsExplorerQuery';
-import { createDefaultExplorerSettings, objectOrderingKeysSchema } from '../Explorer/store';
-import { DefaultTopBarOptions } from '../Explorer/TopBarOptions';
-import { useExplorer, UseExplorerSettings, useExplorerSettings } from '../Explorer/useExplorer';
-import { EmptyNotice } from '../Explorer/View/EmptyNotice';
+import { DefaultTopBarOptions } from '../Layout/TopBarOptions';
 import { TopBarPortal } from '../TopBar/Portal';
+import { useLibraryExplorer } from '../useLibraryExplorer';
 import SearchBar from './SearchBar';
 
 export * from './context';
@@ -39,7 +43,7 @@ export function Component() {
 		explorerSettings
 	});
 
-	const explorer = useExplorer({
+	const explorer = useLibraryExplorer({
 		...objects,
 		isFetchingNextPage: objects.query.isFetchingNextPage,
 		settings: explorerSettings

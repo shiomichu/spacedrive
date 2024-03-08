@@ -1,4 +1,5 @@
 import { Check, Trash, X } from '@phosphor-icons/react';
+import { useIsDark, useLocale } from '@sd/web-core';
 import { useQueryClient } from '@tanstack/react-query';
 import dayjs from 'dayjs';
 import { useState } from 'react';
@@ -9,7 +10,6 @@ import {
 	useLibraryQuery
 } from '@sd/client';
 import { Button, PopoverClose, toast, Tooltip } from '@sd/ui';
-import { useIsDark, useLocale } from '~/hooks';
 
 import IsRunningJob from './IsRunningJob';
 import JobGroup from './JobGroup';

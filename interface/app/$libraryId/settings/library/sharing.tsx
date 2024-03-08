@@ -1,4 +1,4 @@
-import { useLocale } from '~/hooks';
+import { useLocale } from '@sd/web-core';
 
 import { Heading } from '../Layout';
 

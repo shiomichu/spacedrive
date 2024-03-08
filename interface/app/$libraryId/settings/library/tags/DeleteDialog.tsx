@@ -1,6 +1,6 @@
+import { useLocale } from '@sd/web-core';
 import { useLibraryMutation, usePlausibleEvent, useZodForm } from '@sd/client';
 import { Dialog, useDialog, UseDialogProps } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 interface Props extends UseDialogProps {
 	tagId: number;

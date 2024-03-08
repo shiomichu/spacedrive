@@ -1,4 +1,5 @@
 import { Archive, ArrowsClockwise, Info, Trash } from '@phosphor-icons/react';
+import { useLocale, useZodRouteParams } from '@sd/web-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { Suspense } from 'react';
 import { Controller } from 'react-hook-form';
@@ -21,7 +22,6 @@ import {
 } from '@sd/ui';
 import ModalLayout from '~/app/$libraryId/settings/ModalLayout';
 import { LocationIdParamsSchema } from '~/app/route-schemas';
-import { useLocale, useZodRouteParams } from '~/hooks';
 
 import DeleteDialog from './DeleteDialog';
 import IndexerRuleEditor from './IndexerRuleEditor';

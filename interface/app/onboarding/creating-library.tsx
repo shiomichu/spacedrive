@@ -1,5 +1,5 @@
+import { useLocale } from '@sd/web-core';
 import { Loader } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 import { OnboardingContainer, OnboardingDescription, OnboardingTitle } from './components';
 

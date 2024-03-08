@@ -1,8 +1,7 @@
+import { usePlatform } from '@sd/web-core';
 import clsx from 'clsx';
 import { auth } from '@sd/client';
 import { Button, ButtonProps } from '@sd/ui';
-
-import { usePlatform } from '..';
 
 export function LoginButton({
 	children,

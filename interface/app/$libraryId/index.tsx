@@ -1,6 +1,6 @@
+import { Platform } from '@sd/web-core';
 import { redirect } from 'react-router';
 import { type RouteObject } from 'react-router-dom';
-import { Platform } from '~/util/Platform';
 
 import { debugRoutes } from './debug';
 import settingsRoutes from './settings';

@@ -1,6 +1,15 @@
+import { DragOverlay, QuickPreviewContextProvider } from '@sd/explorer';
+import {
+	useKeybindEventHandler,
+	useOperatingSystem,
+	usePlatform,
+	useShowControls,
+	useWindowState,
+	useZodRouteParams
+} from '@sd/web-core';
 import clsx from 'clsx';
 import { Suspense, useEffect, useMemo, useRef } from 'react';
-import { Navigate, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Navigate, Outlet, useNavigate } from 'react-router-dom';
 import {
 	ClientContextProvider,
 	initPlausible,
@@ -14,21 +23,11 @@ import {
 import { useRootContext } from '~/app/RootContext';
 import { LibraryIdParamsSchema } from '~/app/route-schemas';
 import ErrorFallback, { BetterErrorBoundary } from '~/ErrorFallback';
-import {
-	useKeybindEventHandler,
-	useOperatingSystem,
-	useRedirectToNewLocation,
-	useShowControls,
-	useWindowState,
-	useZodRouteParams
-} from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
-import { DragOverlay } from '../Explorer/DragOverlay';
-import { QuickPreviewContextProvider } from '../Explorer/QuickPreview/Context';
 import { LayoutContext } from './Context';
 import { DndContext } from './DndContext';
 import Sidebar from './Sidebar';
+import { useRedirectToNewLocation } from './useRedirectToNewLocation';
 
 const Layout = () => {
 	const { libraries, library } = useClientContext();

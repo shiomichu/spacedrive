@@ -1,3 +1,4 @@
+import { Icon, useLocale, usePlatform, useRouteTitle } from '@sd/web-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { useNavigate } from 'react-router';
 import {
@@ -7,10 +8,7 @@ import {
 	useLibraryMutation
 } from '@sd/client';
 import { Button } from '@sd/ui';
-import { Icon } from '~/components';
 import { AuthRequiredOverlay } from '~/components/AuthRequiredOverlay';
-import { useLocale, useRouteTitle } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import { OnboardingContainer, OnboardingDescription, OnboardingTitle } from './components';
 

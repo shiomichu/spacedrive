@@ -1,18 +1,21 @@
+import {
+	createDefaultExplorerSettings,
+	EmptyNotice,
+	Explorer,
+	ExplorerContextProvider,
+	objectOrderingKeysSchema,
+	useExplorerSettings,
+	useObjectsExplorerQuery
+} from '@sd/explorer';
+import { Icon, useRouteTitle } from '@sd/web-core';
 import { useMemo } from 'react';
-import { ObjectFilterArgs, ObjectKindEnum, ObjectOrder, SearchFilterArgs } from '@sd/client';
-import { Icon } from '~/components';
-import { useRouteTitle } from '~/hooks';
+import { ObjectKindEnum, ObjectOrder, SearchFilterArgs } from '@sd/client';
 
-import Explorer from './Explorer';
-import { ExplorerContextProvider } from './Explorer/Context';
-import { useObjectsExplorerQuery } from './Explorer/queries/useObjectsExplorerQuery';
-import { createDefaultExplorerSettings, objectOrderingKeysSchema } from './Explorer/store';
-import { DefaultTopBarOptions } from './Explorer/TopBarOptions';
-import { useExplorer, useExplorerSettings } from './Explorer/useExplorer';
-import { EmptyNotice } from './Explorer/View/EmptyNotice';
+import { DefaultTopBarOptions } from './Layout/TopBarOptions';
 import { SearchContextProvider, SearchOptions, useSearch } from './search';
 import SearchBar from './search/SearchBar';
 import { TopBarPortal } from './TopBar/Portal';
+import { useLibraryExplorer } from './useLibraryExplorer';
 
 export function Component() {
 	useRouteTitle('Favorites');
@@ -52,7 +55,7 @@ export function Component() {
 		explorerSettings
 	});
 
-	const explorer = useExplorer({
+	const explorer = useLibraryExplorer({
 		...objects,
 		isFetchingNextPage: objects.query.isFetchingNextPage,
 		settings: explorerSettings

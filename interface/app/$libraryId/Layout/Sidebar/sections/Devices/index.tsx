@@ -1,7 +1,6 @@
+import { Icon, useLocale } from '@sd/web-core';
 import { useBridgeQuery } from '@sd/client';
 import { Button, Tooltip } from '@sd/ui';
-import { Icon } from '~/components';
-import { useLocale } from '~/hooks';
 
 import SidebarLink from '../../SidebarLayout/Link';
 import Section from '../../SidebarLayout/Section';

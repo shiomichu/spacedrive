@@ -1,3 +1,5 @@
+import { useExplorerDroppable, useExplorerSearchParams } from '@sd/explorer';
+import { Icon, useLocale } from '@sd/web-core';
 import clsx from 'clsx';
 import { Link, useMatch } from 'react-router-dom';
 import {
@@ -8,11 +10,8 @@ import {
 	useNodes,
 	useOnlineLocations
 } from '@sd/client';
-import { useExplorerDroppable } from '~/app/$libraryId/Explorer/useExplorerDroppable';
-import { useExplorerSearchParams } from '~/app/$libraryId/Explorer/util';
 import { AddLocationButton } from '~/app/$libraryId/settings/library/locations/AddLocationButton';
-import { Icon, SubtleButton } from '~/components';
-import { useLocale } from '~/hooks';
+import { SubtleButton } from '~/components';
 
 import SidebarLink from '../../SidebarLayout/Link';
 import Section from '../../SidebarLayout/Section';

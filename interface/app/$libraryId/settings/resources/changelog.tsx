@@ -1,8 +1,7 @@
+import { useIsDark, useLocale, usePlatform } from '@sd/web-core';
 import { useQuery } from '@tanstack/react-query';
 import clsx from 'clsx';
 import Markdown from 'react-markdown';
-import { useIsDark, useLocale } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import { Heading } from '../Layout';
 

@@ -1,6 +1,5 @@
+import { Icon, useLocale } from '@sd/web-core';
 import { Button, Tooltip } from '@sd/ui';
-import { Icon } from '~/components';
-import { useLocale } from '~/hooks';
 
 export function KeyManager() {
 	const { t } = useLocale();

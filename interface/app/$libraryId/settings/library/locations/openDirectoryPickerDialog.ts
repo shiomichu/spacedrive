@@ -1,4 +1,4 @@
-import { Platform } from '~/util/Platform';
+import { Platform } from '@sd/web-core';
 
 export const openDirectoryPickerDialog = async (platform: Platform): Promise<null | string> => {
 	if (!platform.openDirectoryPickerDialog) return null;

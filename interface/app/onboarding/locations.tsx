@@ -7,14 +7,13 @@ import {
 	Icon as PhosportIcon,
 	Video
 } from '@phosphor-icons/react';
+import { Icon, TruncatedText, useIsDark, useLocale, useOperatingSystem } from '@sd/web-core';
 import clsx from 'clsx';
 import { useMemo } from 'react';
 import { Controller, useWatch } from 'react-hook-form';
 import { useNavigate } from 'react-router';
 import { SystemLocations, useBridgeQuery } from '@sd/client';
 import { Button, Form, RadixCheckbox } from '@sd/ui';
-import { Icon, TruncatedText } from '~/components';
-import { useIsDark, useLocale, useOperatingSystem } from '~/hooks';
 
 import { OnboardingContainer, OnboardingDescription, OnboardingTitle } from './components';
 import { useOnboardingContext } from './context';

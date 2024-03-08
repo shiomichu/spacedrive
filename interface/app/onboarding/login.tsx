@@ -1,9 +1,9 @@
 import { AppLogo } from '@sd/assets/images';
+import { useLocale } from '@sd/web-core';
 import { useNavigate } from 'react-router';
 import { auth, useBridgeQuery } from '@sd/client';
 import { Button, ButtonLink, Loader } from '@sd/ui';
 import { LoginButton } from '~/components/LoginButton';
-import { useLocale } from '~/hooks';
 
 import { OnboardingContainer } from './components';
 

@@ -1,4 +1,5 @@
 import { Info, Trash } from '@phosphor-icons/react';
+import { useLocale } from '@sd/web-core';
 import clsx from 'clsx';
 import { ChangeEvent, useCallback, useEffect, useId } from 'react';
 import { createPortal } from 'react-dom';
@@ -13,7 +14,6 @@ import {
 } from '@sd/client';
 import { Button, Card, Divider, Input, Select, SelectOption, Tooltip } from '@sd/ui';
 import { ErrorMessage, Form, z } from '@sd/ui/src/forms';
-import { useLocale } from '~/hooks';
 
 import { InputKinds, RuleInput, validateInput } from './RuleInput';
 

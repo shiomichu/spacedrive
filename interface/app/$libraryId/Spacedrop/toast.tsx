@@ -1,7 +1,7 @@
+import { usePlatform } from '@sd/web-core';
 import { useEffect, useRef } from 'react';
 import { P2PEvent, useBridgeMutation, useSpacedropProgress } from '@sd/client';
 import { Input, ProgressBar, toast, ToastId } from '@sd/ui';
-import { usePlatform } from '~/util/Platform';
 
 const placeholder = '/Users/oscar/Desktop/demo.txt';
 

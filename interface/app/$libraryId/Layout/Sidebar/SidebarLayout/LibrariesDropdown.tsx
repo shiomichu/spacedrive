@@ -1,8 +1,8 @@
 import { Gear, Lock, Plus } from '@phosphor-icons/react';
+import { useLocale } from '@sd/web-core';
 import clsx from 'clsx';
 import { useClientContext } from '@sd/client';
 import { dialogManager, Dropdown, DropdownMenu } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 import CreateDialog from '../../../settings/node/libraries/CreateDialog';
 

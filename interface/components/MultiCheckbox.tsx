@@ -1,11 +1,8 @@
-import { Check } from '@phosphor-icons/react';
+import { useScrolled } from '@sd/web-core';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import clsx from 'clsx';
 import { useRef } from 'react';
-import { CheckBox } from '@sd/ui';
-import { useScrolled } from '~/hooks/useScrolled';
-
-import { Menu } from './Menu';
+import { CheckBox, Menu } from '@sd/ui';
 
 interface Item {
 	name: string;

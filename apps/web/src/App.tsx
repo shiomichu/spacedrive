@@ -1,15 +1,9 @@
+import { Platform, PlatformProvider, useShowControls } from '@sd/web-core';
 import { hydrate, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useEffect, useRef, useState } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import { CacheProvider, createCache, RspcProvider } from '@sd/client';
-import {
-	createRoutes,
-	Platform,
-	PlatformProvider,
-	SpacedriveInterfaceRoot,
-	SpacedriveRouterProvider
-} from '@sd/interface';
-import { useShowControls } from '@sd/interface/hooks';
+import { createRoutes, SpacedriveInterfaceRoot, SpacedriveRouterProvider } from '@sd/interface';
 
 import demoData from './demoData.json';
 import ScreenshotWrapper from './ScreenshotWrapper';

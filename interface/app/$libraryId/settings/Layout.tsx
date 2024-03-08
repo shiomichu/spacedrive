@@ -1,8 +1,6 @@
+import { useOperatingSystem, useRouteTitle, useWindowState } from '@sd/web-core';
 import { PropsWithChildren, ReactNode, Suspense } from 'react';
 import { Outlet } from 'react-router';
-import { useRouteTitle } from '~/hooks';
-import { useOperatingSystem } from '~/hooks/useOperatingSystem';
-import { useWindowState } from '~/hooks/useWindowState';
 
 import DragRegion from '../../../components/DragRegion';
 import Sidebar from './Sidebar';

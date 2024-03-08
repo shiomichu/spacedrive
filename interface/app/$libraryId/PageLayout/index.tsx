@@ -1,8 +1,8 @@
+import { useShowControls } from '@sd/web-core';
 import clsx from 'clsx';
 import { useRef } from 'react';
 import { Outlet } from 'react-router';
 
-import { useShowControls } from '../../../hooks';
 import { useTopBarContext } from '../TopBar/Layout';
 import { PageLayoutContext } from './Context';
 

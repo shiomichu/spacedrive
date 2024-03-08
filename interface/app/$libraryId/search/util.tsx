@@ -1,7 +1,7 @@
 import { CircleDashed, Folder, Icon, Tag } from '@phosphor-icons/react';
 import { IconTypes } from '@sd/assets/util';
+import { Icon as SDIcon } from '@sd/web-core';
 import clsx from 'clsx';
-import { Icon as SDIcon } from '~/components';
 
 export const filterTypeCondition = {
 	inOrNotIn: {

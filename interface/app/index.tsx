@@ -1,4 +1,5 @@
 import { initRspc, wsBatchLink, type AlphaClient } from '@oscartbeaumont-sd/rspc-client/v2';
+import { Platform, PlatformProvider, usePlatform, useRoutingContext } from '@sd/web-core';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useEffect, useMemo, useState } from 'react';
 import {
@@ -33,9 +34,7 @@ import {
 } from '@sd/client';
 import { Button, Dialogs, Toaster, z } from '@sd/ui';
 import { RouterErrorBoundary } from '~/ErrorFallback';
-import { useRoutingContext } from '~/RoutingContext';
 
-import { Platform, PlatformProvider, usePlatform } from '..';
 import libraryRoutes from './$libraryId';
 import { DragAndDropDebug } from './$libraryId/debug/dnd';
 import { Demo, Demo2 } from './demo.solid';
@@ -44,7 +43,7 @@ import { RootContext } from './RootContext';
 
 import './style.scss';
 
-import { useZodRouteParams } from '~/hooks';
+import { useZodRouteParams } from '@sd/web-core';
 
 // NOTE: all route `Layout`s below should contain
 // the `usePlausiblePageViewMonitor` hook, as early as possible (ideally within the layout itself).

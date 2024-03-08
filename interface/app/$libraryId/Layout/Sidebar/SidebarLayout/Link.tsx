@@ -1,9 +1,8 @@
+import { useOperatingSystem, usePlatform } from '@sd/web-core';
 import { cva } from 'class-variance-authority';
 import clsx from 'clsx';
 import { forwardRef, PropsWithChildren, useEffect } from 'react';
 import { NavLink, NavLinkProps } from 'react-router-dom';
-import { useOperatingSystem } from '~/hooks/useOperatingSystem';
-import { usePlatform } from '~/util/Platform';
 
 const styles = cva(
 	[

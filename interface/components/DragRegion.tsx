@@ -1,6 +1,6 @@
+import { useOperatingSystem } from '@sd/web-core';
 import { forwardRef, PropsWithChildren } from 'react';
 import { cx } from '@sd/ui';
-import { useOperatingSystem } from '~/hooks';
 
 export default forwardRef<HTMLDivElement, PropsWithChildren & { className?: string }>(
 	(props, ref) => {

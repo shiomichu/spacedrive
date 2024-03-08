@@ -1,3 +1,5 @@
+import { explorerStore } from '@sd/explorer';
+import { Accordion, Icon, useCallbackToWatchForm, useLocale, usePlatform } from '@sd/web-core';
 import { useCallback, useEffect, useMemo } from 'react';
 import { Controller, get } from 'react-hook-form';
 import { useDebouncedCallback } from 'use-debounce';
@@ -22,10 +24,6 @@ import {
 	UseDialogProps,
 	z
 } from '@sd/ui';
-import { explorerStore } from '~/app/$libraryId/Explorer/store';
-import { Accordion, Icon } from '~/components';
-import { useCallbackToWatchForm, useLocale } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import IndexerRuleEditor from './IndexerRuleEditor';
 import { LocationPathInputField } from './PathInput';

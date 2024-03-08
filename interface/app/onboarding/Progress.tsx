@@ -1,8 +1,8 @@
+import { useOperatingSystem } from '@sd/web-core';
 import clsx from 'clsx';
 import { useEffect } from 'react';
 import { useMatch, useNavigate } from 'react-router';
 import { onboardingStore, unlockOnboardingScreen, useOnboardingStore } from '@sd/client';
-import { useOperatingSystem } from '~/hooks';
 
 export default function OnboardingProgress() {
 	const obStore = useOnboardingStore();

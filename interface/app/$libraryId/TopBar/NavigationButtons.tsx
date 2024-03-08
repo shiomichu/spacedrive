@@ -1,12 +1,17 @@
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react';
+import { useExplorerDroppable } from '@sd/explorer';
+import {
+	useKeyMatcher,
+	useLocale,
+	useOperatingSystem,
+	useRoutingContext,
+	useShortcut
+} from '@sd/web-core';
 import clsx from 'clsx';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { Tooltip } from '@sd/ui';
-import { useKeyMatcher, useLocale, useOperatingSystem, useShortcut } from '~/hooks';
-import { useRoutingContext } from '~/RoutingContext';
 
-import { useExplorerDroppable } from '../Explorer/useExplorerDroppable';
 import TopBarButton from './TopBarButton';
 
 export const NavigationButtons = () => {

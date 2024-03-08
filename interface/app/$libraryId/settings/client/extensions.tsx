@@ -1,5 +1,5 @@
+import { useLocale } from '@sd/web-core';
 import { Button, Card, GridLayout, SearchInput } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 import { Heading } from '../Layout';
 

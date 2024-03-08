@@ -1,3 +1,4 @@
+import { i18n, Icon, useDebouncedFormWatch, useLocale, usePlatform } from '@sd/web-core';
 import clsx from 'clsx';
 import { Controller, FormProvider } from 'react-hook-form';
 import {
@@ -8,10 +9,6 @@ import {
 	useZodForm
 } from '@sd/client';
 import { Button, Card, Input, Select, SelectOption, Slider, Switch, tw, z } from '@sd/ui';
-import i18n from '~/app/I18n';
-import { Icon } from '~/components';
-import { useDebouncedFormWatch, useLocale } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import { Heading } from '../Layout';
 import Setting from '../Setting';

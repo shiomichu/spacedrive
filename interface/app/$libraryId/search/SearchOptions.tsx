@@ -1,5 +1,6 @@
 import { FunnelSimple, Icon, Plus } from '@phosphor-icons/react';
 import { IconTypes } from '@sd/assets/util';
+import { useIsDark, useKeybind } from '@sd/web-core';
 import clsx from 'clsx';
 import { memo, PropsWithChildren, useDeferredValue, useMemo, useState } from 'react';
 import { useLibraryMutation } from '@sd/client';
@@ -13,7 +14,6 @@ import {
 	tw,
 	usePopover
 } from '@sd/ui';
-import { useIsDark, useKeybind } from '~/hooks';
 
 import { AppliedFilters } from './AppliedFilters';
 import { useSearchContext } from './context';

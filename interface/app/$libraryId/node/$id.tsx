@@ -1,15 +1,17 @@
+import {
+	createDefaultExplorerSettings,
+	Explorer,
+	ExplorerContextProvider,
+	useExplorerSettings
+} from '@sd/explorer';
+import { Icon, useRouteTitle, useZodRouteParams } from '@sd/web-core';
 import { useMemo } from 'react';
 import { useBridgeQuery, useLibraryQuery } from '@sd/client';
 import { NodeIdParamsSchema } from '~/app/route-schemas';
-import { Icon } from '~/components';
-import { useRouteTitle, useZodRouteParams } from '~/hooks';
 
-import Explorer from '../Explorer';
-import { ExplorerContextProvider } from '../Explorer/Context';
-import { createDefaultExplorerSettings } from '../Explorer/store';
-import { DefaultTopBarOptions } from '../Explorer/TopBarOptions';
-import { useExplorer, useExplorerSettings } from '../Explorer/useExplorer';
+import { DefaultTopBarOptions } from '../Layout/TopBarOptions';
 import { TopBarPortal } from '../TopBar/Portal';
+import { useLibraryExplorer } from '../useLibraryExplorer';
 
 export const Component = () => {
 	const { id: nodeId } = useZodRouteParams(NodeIdParamsSchema);
@@ -30,7 +32,7 @@ export const Component = () => {
 		)
 	});
 
-	const explorer = useExplorer({
+	const explorer = useLibraryExplorer({
 		items: query.data || null,
 		parent: nodeState.data
 			? {

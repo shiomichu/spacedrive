@@ -1,8 +1,8 @@
 import { Info } from '@phosphor-icons/react';
+import { usePlatform } from '@sd/web-core';
 import clsx from 'clsx';
 import { PropsWithChildren } from 'react';
 import { ErrorMessage, Tooltip } from '@sd/ui';
-import { usePlatform } from '~/util/Platform';
 
 interface Props {
 	title: string;

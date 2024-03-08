@@ -17,6 +17,12 @@
 			"path": "interface"
 		},
 		{
+			"path": "packages/explorer"
+		},
+		{
+			"path": "packages/web-core"
+		},
+		{
 			"path": "packages/client"
 		},
 		{

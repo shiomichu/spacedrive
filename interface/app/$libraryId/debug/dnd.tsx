@@ -1,5 +1,5 @@
+import { usePlatform } from '@sd/web-core';
 import { useEffect, useRef } from 'react';
-import { usePlatform } from '~/util/Platform';
 
 export function DragAndDropDebug() {
 	const ref = useRef<HTMLDivElement>(null);

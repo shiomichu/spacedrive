@@ -1,8 +1,5 @@
 import { z } from '@sd/ui/src/forms';
 
-export const SortOrderSchema = z.union([z.literal('Asc'), z.literal('Desc')]);
-export type SortOrder = z.infer<typeof SortOrderSchema>;
-
 export const NodeIdParamsSchema = z.object({ id: z.string() });
 export type NodeIdParams = z.infer<typeof NodeIdParamsSchema>;
 
@@ -35,8 +32,3 @@ export const SearchParamsSchema = PathParamsSchema.extend({
 	search: z.string().optional()
 });
 export type SearchParams = z.infer<typeof SearchParamsSchema>;
-
-export const ExplorerParamsSchema = PathParamsSchema.extend({
-	take: z.coerce.number().default(100)
-});
-export type ExplorerParams = z.infer<typeof ExplorerParamsSchema>;

@@ -1,8 +1,7 @@
+import { useOperatingSystem, usePlatform } from '@sd/web-core';
 import clsx from 'clsx';
 import { ChangeEvent, ChangeEventHandler, forwardRef, memo } from 'react';
 import { Input, toast } from '@sd/ui';
-import { useOperatingSystem } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import { openDirectoryPickerDialog } from '../openDirectoryPickerDialog';
 

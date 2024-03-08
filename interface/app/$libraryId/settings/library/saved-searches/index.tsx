@@ -1,4 +1,5 @@
 import { Trash } from '@phosphor-icons/react';
+import { useDebouncedFormWatch, useLocale } from '@sd/web-core';
 import clsx from 'clsx';
 import { useMemo, useState } from 'react';
 import {
@@ -12,7 +13,6 @@ import { Button, Card, Form, InputField, Label, Tooltip, z } from '@sd/ui';
 import { SearchContextProvider, useSearch } from '~/app/$libraryId/search';
 import { AppliedFilters } from '~/app/$libraryId/search/AppliedFilters';
 import { Heading } from '~/app/$libraryId/settings/Layout';
-import { useDebouncedFormWatch, useLocale } from '~/hooks';
 
 export const Component = () => {
 	const savedSearches = useLibraryQuery(['search.saved.list'], { suspense: true });

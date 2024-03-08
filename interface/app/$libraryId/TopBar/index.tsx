@@ -1,20 +1,20 @@
 import { Plus, X } from '@phosphor-icons/react';
+import { explorerStore } from '@sd/explorer';
+import {
+	useKeyMatcher,
+	useLocale,
+	useOperatingSystem,
+	useRoutingContext,
+	useShortcut,
+	useShowControls
+} from '@sd/web-core';
 import clsx from 'clsx';
 import { useLayoutEffect, useRef } from 'react';
 import useResizeObserver from 'use-resize-observer';
 import { useSelector } from '@sd/client';
 import { Tooltip } from '@sd/ui';
-import {
-	useKeyMatcher,
-	useLocale,
-	useOperatingSystem,
-	useShortcut,
-	useShowControls
-} from '~/hooks';
-import { useRoutingContext } from '~/RoutingContext';
 import { useTabsContext } from '~/TabsContext';
 
-import { explorerStore } from '../Explorer/store';
 import { useTopBarContext } from './Layout';
 import { NavigationButtons } from './NavigationButtons';
 

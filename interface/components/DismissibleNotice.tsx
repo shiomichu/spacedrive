@@ -1,11 +1,11 @@
-import clsx from 'clsx';
-import { ReactNode } from 'react';
-import { Button } from '@sd/ui';
 import {
 	dismissibleNoticeStore,
 	getDismissibleNoticeStore,
 	useDismissibleNoticeStore
-} from '~/hooks/useDismissibleNoticeStore';
+} from '@sd/web-core';
+import clsx from 'clsx';
+import { ReactNode } from 'react';
+import { Button } from '@sd/ui';
 
 interface Props extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {
 	icon?: ReactNode;

@@ -1,8 +1,7 @@
+import { useOperatingSystem, useShowControls, useWindowState } from '@sd/web-core';
 import clsx from 'clsx';
 import { PropsWithChildren, useEffect } from 'react';
 import { MacTrafficLights } from '~/components';
-import { useOperatingSystem, useShowControls } from '~/hooks';
-import { useWindowState } from '~/hooks/useWindowState';
 
 import Footer from './Footer';
 import LibrariesDropdown from './LibrariesDropdown';

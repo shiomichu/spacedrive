@@ -1,7 +1,6 @@
+import { useOperatingSystem, usePlatform } from '@sd/web-core';
 import clsx from 'clsx';
 import { MacTrafficLights } from '~/components/TrafficLights';
-import { useOperatingSystem } from '~/hooks/useOperatingSystem';
-import { usePlatform } from '~/util/Platform';
 
 import { macOnly } from '../helpers';
 

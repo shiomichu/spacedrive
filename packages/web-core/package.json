@@ -1,0 +1,12 @@
+{
+	"name": "@sd/web-core",
+	"main": "src/index.ts",
+	"types": "src/index.ts",
+	"dependencies": {
+		"@phosphor-icons/react": "^2.0.15",
+		"@sd/assets": "workspace:^",
+		"@sd/client": "workspace:^",
+		"@sd/ui": "workspace:^",
+		"react": "^18.2.0"
+	}
+}

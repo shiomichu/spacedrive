@@ -1,6 +1,6 @@
+import { useLocale } from '@sd/web-core';
 import { useNavigate } from 'react-router';
 import { Button } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 export const Component = () => {
 	const navigate = useNavigate();

@@ -1,7 +1,6 @@
 import { Info, Question } from '@phosphor-icons/react';
+import { useLocale, usePlatform } from '@sd/web-core';
 import { Button, Form, RadioGroupField } from '@sd/ui';
-import { useLocale } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import { OnboardingContainer, OnboardingDescription, OnboardingTitle } from './components';
 import { shareTelemetry, useOnboardingContext } from './context';

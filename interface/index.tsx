@@ -1,3 +1,4 @@
+import { i18n, RouterContext, RoutingContext, useTheme, WithPrismTheme } from '@sd/web-core';
 import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import duration from 'dayjs/plugin/duration';
@@ -16,19 +17,13 @@ import { toast, TooltipProvider } from '@sd/ui';
 
 import { createRoutes } from './app';
 import { SpacedropProvider } from './app/$libraryId/Spacedrop';
-import i18n from './app/I18n';
 import { useP2PErrorToast } from './app/p2p';
 import { Devtools } from './components/Devtools';
-import { WithPrismTheme } from './components/TextViewer/prism';
 import ErrorFallback, { BetterErrorBoundary } from './ErrorFallback';
-import { useTheme } from './hooks';
-import { RouterContext, RoutingContext } from './RoutingContext';
 
 export * from './app';
 export { ErrorPage } from './ErrorFallback';
 export * from './TabsContext';
-export * from './util/keybind';
-export * from './util/Platform';
 
 dayjs.extend(advancedFormat);
 dayjs.extend(relativeTime);

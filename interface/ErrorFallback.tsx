@@ -1,3 +1,4 @@
+import { useOperatingSystem, usePlatform, useTheme } from '@sd/web-core';
 import { PropsWithChildren, useEffect, useState } from 'react';
 import {
 	ErrorBoundary,
@@ -9,8 +10,6 @@ import { useDebugState } from '@sd/client';
 import { Button, Dialogs } from '@sd/ui';
 
 import { showAlertDialog } from './components';
-import { useOperatingSystem, useTheme } from './hooks';
-import { usePlatform } from './util/Platform';
 
 const sentryBrowserLazy = import('@sentry/browser');
 

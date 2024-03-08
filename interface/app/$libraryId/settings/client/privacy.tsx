@@ -1,6 +1,6 @@
+import { useLocale } from '@sd/web-core';
 import { telemetryState, useTelemetryState } from '@sd/client';
 import { Switch } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 import { Heading } from '../Layout';
 import Setting from '../Setting';

@@ -15,10 +15,9 @@ import {
 	TagSimple,
 	User
 } from '@phosphor-icons/react';
+import { useLocale, useOperatingSystem, usePlatform } from '@sd/web-core';
 import { useFeatureFlag } from '@sd/client';
 import { tw } from '@sd/ui';
-import { useLocale, useOperatingSystem } from '~/hooks';
-import { usePlatform } from '~/util/Platform';
 
 import Icon from '../Layout/Sidebar/SidebarLayout/Icon';
 import SidebarLink from '../Layout/Sidebar/SidebarLayout/Link';

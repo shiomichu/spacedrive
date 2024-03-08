@@ -1,6 +1,6 @@
+import { useDebouncedFormWatch, useLocale } from '@sd/web-core';
 import { MaybeUndefined, useBridgeMutation, useLibraryContext, useZodForm } from '@sd/client';
 import { Button, dialogManager, Form, InputField, Switch, Tooltip, z } from '@sd/ui';
-import { useDebouncedFormWatch, useLocale } from '~/hooks';
 
 import { Heading } from '../Layout';
 import DeleteLibraryDialog from '../node/libraries/DeleteDialog';

@@ -1,5 +1,5 @@
+import { useLocale } from '@sd/web-core';
 import { ScreenHeading } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 export const Component = () => {
 	const { t } = useLocale();

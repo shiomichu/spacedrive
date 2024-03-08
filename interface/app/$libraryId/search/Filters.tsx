@@ -7,6 +7,7 @@ import {
 	Tag,
 	Textbox
 } from '@phosphor-icons/react';
+import { Icon as SDIcon } from '@sd/web-core';
 import { useState } from 'react';
 import {
 	InOrNotIn,
@@ -18,7 +19,6 @@ import {
 	useNodes
 } from '@sd/client';
 import { Button, Input } from '@sd/ui';
-import { Icon as SDIcon } from '~/components';
 
 import { SearchOptionItem, SearchOptionSubMenu } from '.';
 import { AllKeys, FilterOption, getKey } from './store';

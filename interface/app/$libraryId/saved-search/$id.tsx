@@ -1,27 +1,25 @@
 import { MagnifyingGlass } from '@phosphor-icons/react';
 import { getIcon, iconNames } from '@sd/assets/util';
-import { useMemo } from 'react';
 import {
-	FilePathOrder,
-	SearchFilterArgs,
-	useCache,
-	useLibraryMutation,
-	useLibraryQuery
-} from '@sd/client';
+	createDefaultExplorerSettings,
+	EmptyNotice,
+	Explorer,
+	ExplorerContextProvider,
+	filePathOrderingKeysSchema,
+	useExplorerSettings,
+	usePathsExplorerQuery
+} from '@sd/explorer';
+import { useRouteTitle, useZodRouteParams } from '@sd/web-core';
+import { useMemo } from 'react';
+import { FilePathOrder, SearchFilterArgs, useLibraryMutation, useLibraryQuery } from '@sd/client';
 import { Button } from '@sd/ui';
 import { SearchIdParamsSchema } from '~/app/route-schemas';
-import { useRouteTitle, useZodRouteParams } from '~/hooks';
 
-import Explorer from '../Explorer';
-import { ExplorerContextProvider } from '../Explorer/Context';
-import { usePathsExplorerQuery } from '../Explorer/queries';
-import { createDefaultExplorerSettings, filePathOrderingKeysSchema } from '../Explorer/store';
-import { DefaultTopBarOptions } from '../Explorer/TopBarOptions';
-import { useExplorer, useExplorerSettings } from '../Explorer/useExplorer';
-import { EmptyNotice } from '../Explorer/View/EmptyNotice';
+import { DefaultTopBarOptions } from '../Layout/TopBarOptions';
 import { SearchContextProvider, SearchOptions, useSearch, useSearchContext } from '../search';
 import SearchBar from '../search/SearchBar';
 import { TopBarPortal } from '../TopBar/Portal';
+import { useLibraryExplorer } from '../useLibraryExplorer';
 
 export const Component = () => {
 	const { id } = useZodRouteParams(SearchIdParamsSchema);
@@ -58,7 +56,7 @@ export const Component = () => {
 		explorerSettings
 	});
 
-	const explorer = useExplorer({
+	const explorer = useLibraryExplorer({
 		...paths,
 		isFetchingNextPage: paths.query.isFetchingNextPage,
 		settings: explorerSettings

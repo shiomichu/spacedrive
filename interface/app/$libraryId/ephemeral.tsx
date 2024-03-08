@@ -2,6 +2,26 @@ import { type AlphaClient } from '@oscartbeaumont-sd/rspc-client/v2';
 import { ArrowLeft, ArrowRight, Info } from '@phosphor-icons/react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { iconNames } from '@sd/assets/util';
+import {
+	createDefaultExplorerSettings,
+	EmptyNotice,
+	Explorer,
+	ExplorerContextProvider,
+	explorerStore,
+	nonIndexedPathOrderingSchema,
+	useExplorerSettings,
+	useKeyDeleteFile
+} from '@sd/explorer';
+import {
+	getDismissibleNoticeStore,
+	Icon,
+	useDismissibleNoticeStore,
+	useIsDark,
+	useLocale,
+	useOperatingSystem,
+	useRouteTitle,
+	useZodSearchParams
+} from '@sd/web-core';
 import clsx from 'clsx';
 import { memo, Suspense, useDeferredValue, useMemo } from 'react';
 import {
@@ -14,32 +34,13 @@ import {
 } from '@sd/client';
 import { Button, Tooltip } from '@sd/ui';
 import { PathParamsSchema, type PathParams } from '~/app/route-schemas';
-import { Icon } from '~/components';
-import {
-	getDismissibleNoticeStore,
-	useDismissibleNoticeStore,
-	useIsDark,
-	useKeyDeleteFile,
-	useLocale,
-	useOperatingSystem,
-	useZodSearchParams
-} from '~/hooks';
-import { useRouteTitle } from '~/hooks/useRouteTitle';
 
-import Explorer from './Explorer';
-import { ExplorerContextProvider } from './Explorer/Context';
-import {
-	createDefaultExplorerSettings,
-	explorerStore,
-	nonIndexedPathOrderingSchema
-} from './Explorer/store';
-import { DefaultTopBarOptions } from './Explorer/TopBarOptions';
-import { useExplorer, useExplorerSettings } from './Explorer/useExplorer';
-import { EmptyNotice } from './Explorer/View/EmptyNotice';
+import { DefaultTopBarOptions } from './Layout/TopBarOptions';
 import { AddLocationButton } from './settings/library/locations/AddLocationButton';
 import { useTopBarContext } from './TopBar/Layout';
 import { TopBarPortal } from './TopBar/Portal';
 import TopBarButton from './TopBar/TopBarButton';
+import { useLibraryExplorer } from './useLibraryExplorer';
 
 const NOTICE_ITEMS: { icon: keyof typeof iconNames; name: string }[] = [
 	{
@@ -228,7 +229,7 @@ const EphemeralExplorer = memo((props: { args: PathParams }) => {
 		return ret;
 	}, [entries, settingsSnapshot.layoutMode]);
 
-	const explorer = useExplorer({
+	const explorer = useLibraryExplorer({
 		items,
 		parent: path != null ? { type: 'Ephemeral', path } : undefined,
 		settings: explorerSettings,

@@ -1,10 +1,10 @@
+import { useLocale, useZodRouteParams } from '@sd/web-core';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 import { Tag, useCache, useLibraryQuery, useNodes } from '@sd/client';
 import { Button, Card, dialogManager } from '@sd/ui';
 import { Heading } from '~/app/$libraryId/settings/Layout';
 import { TagsSettingsParamsSchema } from '~/app/route-schemas';
-import { useLocale, useZodRouteParams } from '~/hooks';
 
 import CreateDialog from './CreateDialog';
 import EditForm from './EditForm';

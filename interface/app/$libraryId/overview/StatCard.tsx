@@ -1,9 +1,8 @@
 import { ReactComponent as Ellipsis } from '@sd/assets/svgs/ellipsis.svg';
+import { Icon, useIsDark } from '@sd/web-core';
 import { useEffect, useMemo, useState } from 'react';
 import { byteSize } from '@sd/client';
 import { Button, Card, CircularProgress, tw } from '@sd/ui';
-import { Icon } from '~/components';
-import { useIsDark } from '~/hooks';
 
 type StatCardProps = {
 	name: string;

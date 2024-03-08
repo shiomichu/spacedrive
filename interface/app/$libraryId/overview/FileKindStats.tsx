@@ -1,9 +1,9 @@
+import { Icon } from '@sd/web-core';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { formatNumber, SearchFilterArgs, useLibraryQuery } from '@sd/client';
-import { Icon } from '~/components';
 
 export default () => {
 	const ref = useRef<HTMLDivElement>(null);

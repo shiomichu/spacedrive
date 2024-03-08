@@ -1,8 +1,8 @@
 import { Clipboard } from '@phosphor-icons/react';
+import { useLocale } from '@sd/web-core';
 import { ReactNode } from 'react';
 import { useZodForm } from '@sd/client';
 import { Button, Dialog, dialogManager, Input, useDialog, UseDialogProps } from '@sd/ui';
-import { useLocale } from '~/hooks';
 
 interface Props extends UseDialogProps {
 	title: string; // dialog title

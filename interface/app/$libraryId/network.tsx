@@ -1,15 +1,17 @@
+import {
+	createDefaultExplorerSettings,
+	Explorer,
+	ExplorerContextProvider,
+	nonIndexedPathOrderingSchema,
+	useExplorerSettings
+} from '@sd/explorer';
+import { Icon, useLocale, useRouteTitle } from '@sd/web-core';
 import { useMemo } from 'react';
 import { useDiscoveredPeers } from '@sd/client';
-import { Icon } from '~/components';
-import { useLocale } from '~/hooks';
-import { useRouteTitle } from '~/hooks/useRouteTitle';
 
-import Explorer from './Explorer';
-import { ExplorerContextProvider } from './Explorer/Context';
-import { createDefaultExplorerSettings, nonIndexedPathOrderingSchema } from './Explorer/store';
-import { DefaultTopBarOptions } from './Explorer/TopBarOptions';
-import { useExplorer, useExplorerSettings } from './Explorer/useExplorer';
+import { DefaultTopBarOptions } from './Layout/TopBarOptions';
 import { TopBarPortal } from './TopBar/Portal';
+import { useLibraryExplorer } from './useLibraryExplorer';
 
 export const Component = () => {
 	const title = useRouteTitle('Network');
@@ -33,7 +35,7 @@ export const Component = () => {
 		orderingKeys: nonIndexedPathOrderingSchema
 	});
 
-	const explorer = useExplorer({
+	const explorer = useLibraryExplorer({
 		items: peers.map((peer) => ({
 			type: 'SpacedropPeer' as const,
 			has_local_thumbnail: false,

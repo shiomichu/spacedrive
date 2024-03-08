@@ -1,6 +1,6 @@
 // import { X } from '@phosphor-icons/react';
+import { Icon, IconName } from '@sd/web-core';
 import clsx from 'clsx';
-import { Icon, IconName } from '~/components';
 
 type NewCardProps =
 	| {

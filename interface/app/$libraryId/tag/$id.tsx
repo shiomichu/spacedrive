@@ -1,19 +1,22 @@
+import {
+	createDefaultExplorerSettings,
+	EmptyNotice,
+	Explorer,
+	ExplorerContextProvider,
+	objectOrderingKeysSchema,
+	useExplorerSettings,
+	useObjectsExplorerQuery
+} from '@sd/explorer';
+import { Icon, useRouteTitle, useZodRouteParams } from '@sd/web-core';
 import { useMemo } from 'react';
 import { ObjectKindEnum, ObjectOrder, useCache, useLibraryQuery, useNodes } from '@sd/client';
 import { LocationIdParamsSchema } from '~/app/route-schemas';
-import { Icon } from '~/components';
-import { useRouteTitle, useZodRouteParams } from '~/hooks';
 
-import Explorer from '../Explorer';
-import { ExplorerContextProvider } from '../Explorer/Context';
-import { useObjectsExplorerQuery } from '../Explorer/queries';
-import { createDefaultExplorerSettings, objectOrderingKeysSchema } from '../Explorer/store';
-import { DefaultTopBarOptions } from '../Explorer/TopBarOptions';
-import { useExplorer, useExplorerSettings } from '../Explorer/useExplorer';
-import { EmptyNotice } from '../Explorer/View/EmptyNotice';
+import { DefaultTopBarOptions } from '../Layout/TopBarOptions';
 import { SearchContextProvider, SearchOptions, useSearch } from '../search';
 import SearchBar from '../search/SearchBar';
 import { TopBarPortal } from '../TopBar/Portal';
+import { useLibraryExplorer } from '../useLibraryExplorer';
 
 export function Component() {
 	const { id: tagId } = useZodRouteParams(LocationIdParamsSchema);
@@ -51,7 +54,7 @@ export function Component() {
 		explorerSettings
 	});
 
-	const explorer = useExplorer({
+	const explorer = useLibraryExplorer({
 		...objects,
 		isFetchingNextPage: objects.query.isFetchingNextPage,
 		settings: explorerSettings,

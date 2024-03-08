@@ -1,8 +1,7 @@
 import { Pencil, Trash } from '@phosphor-icons/react';
+import { Icon, useLocale } from '@sd/web-core';
 import { LibraryConfigWrapped } from '@sd/client';
 import { Button, ButtonLink, Card, dialogManager, Tooltip } from '@sd/ui';
-import { Icon } from '~/components';
-import { useLocale } from '~/hooks';
 
 import DeleteDialog from './DeleteDialog';
 

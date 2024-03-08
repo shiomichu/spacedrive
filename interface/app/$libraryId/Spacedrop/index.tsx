@@ -1,4 +1,5 @@
 import { Planet } from '@phosphor-icons/react';
+import { Icon, useDropzone, useLocale, useOnDndLeave, usePlatform } from '@sd/web-core';
 import clsx from 'clsx';
 import { useEffect, useRef, useState } from 'react';
 import { proxy } from 'valtio';
@@ -10,10 +11,7 @@ import {
 	useSelector
 } from '@sd/client';
 import { toast } from '@sd/ui';
-import { Icon } from '~/components';
-import { useDropzone, useLocale, useOnDndLeave } from '~/hooks';
 import { hardwareModelToIcon } from '~/util/hardware';
-import { usePlatform } from '~/util/Platform';
 
 import { TOP_BAR_ICON_STYLE } from '../TopBar/TopBarOptions';
 import { useIncomingSpacedropToast, useSpacedropProgressToast } from './toast';

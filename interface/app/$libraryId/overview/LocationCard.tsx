@@ -1,8 +1,8 @@
 import { ReactComponent as Ellipsis } from '@sd/assets/svgs/ellipsis.svg';
+import { Icon } from '@sd/web-core';
 import { useMemo } from 'react';
 import { byteSize } from '@sd/client';
 import { Button, Card, tw } from '@sd/ui';
-import { Icon } from '~/components';
 
 type LocationCardProps = {
 	name: string;
