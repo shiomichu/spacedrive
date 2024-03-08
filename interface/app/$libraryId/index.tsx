@@ -1,4 +1,4 @@
-import { Platform } from '@sd/web-core';
+import { Platform } from '@sd/interface-core';
 import { redirect } from 'react-router';
 import { type RouteObject } from 'react-router-dom';
 

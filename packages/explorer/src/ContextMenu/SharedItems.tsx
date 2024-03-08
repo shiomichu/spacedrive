@@ -5,7 +5,7 @@ import {
 	useOperatingSystem,
 	usePlatform,
 	type Platform
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import { useMemo } from 'react';
 import { isNonEmpty, useBridgeMutation, useDiscoveredPeers, useSelector } from '@sd/client';
 import { ContextMenu, Menu, ModifierKeys } from '@sd/ui';

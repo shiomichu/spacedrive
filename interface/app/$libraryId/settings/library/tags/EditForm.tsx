@@ -1,5 +1,5 @@
 import { Trash } from '@phosphor-icons/react';
-import { ColorPicker, useDebouncedFormWatch, useLocale } from '@sd/web-core';
+import { ColorPicker, useDebouncedFormWatch, useLocale } from '@sd/interface-core';
 import { Tag, useLibraryMutation, useZodForm } from '@sd/client';
 import { Button, dialogManager, Form, InputField, Switch, Tooltip, z } from '@sd/ui';
 

@@ -4,7 +4,7 @@ import {
 	useLocale,
 	useOperatingSystem,
 	usePlatform
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import { NonEmptyArray, useLibraryContext } from '@sd/client';
 import { Menu, ModifierKeys } from '@sd/ui';
 

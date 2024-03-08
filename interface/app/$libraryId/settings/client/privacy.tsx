@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { telemetryState, useTelemetryState } from '@sd/client';
 import { Switch } from '@sd/ui';
 

@@ -1,4 +1,4 @@
-import { Icon, useLocale } from '@sd/web-core';
+import { Icon, useLocale } from '@sd/interface-core';
 import { useLibraryMutation, usePlausibleEvent, useZodForm } from '@sd/client';
 import { Dialog, useDialog, UseDialogProps } from '@sd/ui';
 

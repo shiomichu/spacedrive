@@ -14,7 +14,7 @@
 		"@oscartbeaumont-sd/rspc-client": "=0.0.0-main-dc31e5b2",
 		"@sd/client": "workspace:*",
 		"@sd/interface": "workspace:*",
-		"@sd/web-core": "workspace:^",
+		"@sd/interface-core": "workspace:^",
 		"@tanstack/react-query": "^4.36.1",
 		"html-to-image": "^1.11.11",
 		"html2canvas": "^1.4.1",

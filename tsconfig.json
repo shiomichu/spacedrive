@@ -20,7 +20,7 @@
 			"path": "packages/explorer"
 		},
 		{
-			"path": "packages/web-core"
+			"path": "packages/interface-core"
 		},
 		{
 			"path": "packages/client"

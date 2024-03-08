@@ -1,6 +1,6 @@
 import { EjectSimple } from '@phosphor-icons/react';
 import { useExplorerDroppable, useExplorerSearchParams } from '@sd/explorer';
-import { Icon, IconName, useHomeDir, useLocale } from '@sd/web-core';
+import { Icon, IconName, useHomeDir, useLocale } from '@sd/interface-core';
 import clsx from 'clsx';
 import { PropsWithChildren, useMemo } from 'react';
 import { useBridgeQuery, useCache, useLibraryQuery, useNodes } from '@sd/client';

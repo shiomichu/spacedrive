@@ -1,5 +1,5 @@
 import { Hash, Image, Package, Trash, TrashSimple } from '@phosphor-icons/react';
-import { useKeybindFactory, useKeysMatcher, useLocale, useOperatingSystem } from '@sd/web-core';
+import { useKeybindFactory, useKeysMatcher, useLocale, useOperatingSystem } from '@sd/interface-core';
 import { isNonEmpty, libraryClient, useLibraryMutation } from '@sd/client';
 import { ContextMenu, dialogManager, Menu, ModifierKeys, toast } from '@sd/ui';
 

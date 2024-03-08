@@ -7,8 +7,9 @@
 	},
 	"include": ["src", "src/demoData.json"],
 	"references": [
-		{
-			"path": "../../interface"
-		}
+		{ "path": "../../interface" },
+		{ "path": "../../packages/client" },
+		{ "path": "../../packages/interface" },
+		{ "path": "../../packages/interface-core" }
 	]
 }

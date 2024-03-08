@@ -20,7 +20,7 @@ import {
 	useRouteTitle,
 	useShortcut,
 	useZodRouteParams
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import { useEffect, useMemo } from 'react';
 import { useSearchParams as useRawSearchParams } from 'react-router-dom';
 import { stringify } from 'uuid';

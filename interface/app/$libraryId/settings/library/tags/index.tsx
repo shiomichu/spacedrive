@@ -1,4 +1,4 @@
-import { useLocale, useZodRouteParams } from '@sd/web-core';
+import { useLocale, useZodRouteParams } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 import { Tag, useCache, useLibraryQuery, useNodes } from '@sd/client';

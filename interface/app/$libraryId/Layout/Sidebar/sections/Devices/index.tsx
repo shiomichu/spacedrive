@@ -1,4 +1,4 @@
-import { Icon, useLocale } from '@sd/web-core';
+import { Icon, useLocale } from '@sd/interface-core';
 import { useBridgeQuery } from '@sd/client';
 import { Button, Tooltip } from '@sd/ui';
 

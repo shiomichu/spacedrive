@@ -1,5 +1,5 @@
 import { Repeat, Trash } from '@phosphor-icons/react';
-import { Icon, useLocale } from '@sd/web-core';
+import { Icon, useLocale } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';

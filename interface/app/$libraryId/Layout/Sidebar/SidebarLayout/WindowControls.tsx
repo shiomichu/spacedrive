@@ -1,4 +1,4 @@
-import { useOperatingSystem, usePlatform } from '@sd/web-core';
+import { useOperatingSystem, usePlatform } from '@sd/interface-core';
 import clsx from 'clsx';
 import { MacTrafficLights } from '~/components/TrafficLights';
 

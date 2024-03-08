@@ -1,6 +1,6 @@
 import { X } from '@phosphor-icons/react';
 import { useExplorerDroppable } from '@sd/explorer';
-import { Folder, useLocale } from '@sd/web-core';
+import { Folder, useLocale } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useMatch, useNavigate, useResolvedPath } from 'react-router';
 import { useLibraryMutation, useLibraryQuery, type SavedSearch } from '@sd/client';

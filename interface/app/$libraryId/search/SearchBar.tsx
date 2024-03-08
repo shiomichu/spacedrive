@@ -1,4 +1,4 @@
-import { keybindForOs, useOperatingSystem } from '@sd/web-core';
+import { keybindForOs, useOperatingSystem } from '@sd/interface-core';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { createSearchParams } from 'react-router-dom';

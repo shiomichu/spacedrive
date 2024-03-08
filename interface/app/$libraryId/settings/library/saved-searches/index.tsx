@@ -1,5 +1,5 @@
 import { Trash } from '@phosphor-icons/react';
-import { useDebouncedFormWatch, useLocale } from '@sd/web-core';
+import { useDebouncedFormWatch, useLocale } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useMemo, useState } from 'react';
 import {

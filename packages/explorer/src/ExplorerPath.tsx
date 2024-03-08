@@ -1,5 +1,5 @@
 import { CaretRight } from '@phosphor-icons/react';
-import { Icon, useIsDark, useOperatingSystem } from '@sd/web-core';
+import { Icon, useIsDark, useOperatingSystem } from '@sd/interface-core';
 import clsx from 'clsx';
 import { memo, useMemo } from 'react';
 import { useNavigate } from 'react-router';

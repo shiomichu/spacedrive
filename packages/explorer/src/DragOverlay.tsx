@@ -1,7 +1,7 @@
 import type { ClientRect, Modifier } from '@dnd-kit/core';
 import { DragOverlay as DragOverlayPrimitive } from '@dnd-kit/core';
 import { getEventCoordinates } from '@dnd-kit/utilities';
-import { useIsDark } from '@sd/web-core';
+import { useIsDark } from '@sd/interface-core';
 import clsx from 'clsx';
 import { memo, useEffect, useRef } from 'react';
 import { ExplorerItem, useSelector } from '@sd/client';

@@ -1,5 +1,5 @@
 import { ClipboardText } from '@phosphor-icons/react';
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { Menu, toast } from '@sd/ui';
 
 export const CopyAsPathBase = (

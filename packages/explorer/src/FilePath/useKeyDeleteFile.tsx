@@ -1,4 +1,4 @@
-import { useShortcut } from '@sd/web-core';
+import { useShortcut } from '@sd/interface-core';
 import {
 	isNonEmpty,
 	useItemsAsEphemeralPaths,

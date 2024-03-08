@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 // import { FilePath, useLibraryMutation, useZodForm } from '@sd/client';
 // import { Dialog, Slider, useDialog, UseDialogProps, z } from '@sd/ui';
-// import { useLocale } from '@sd/web-core';
+// import { useLocale } from '@sd/interface-core';
 
 // interface Props extends UseDialogProps {
 // 	locationId: number;

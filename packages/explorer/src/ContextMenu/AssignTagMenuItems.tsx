@@ -1,5 +1,5 @@
 import { Plus } from '@phosphor-icons/react';
-import { keybindForOs, useLocale, useOperatingSystem, useScrolled } from '@sd/web-core';
+import { keybindForOs, useLocale, useOperatingSystem, useScrolled } from '@sd/interface-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import clsx from 'clsx';

@@ -9,7 +9,7 @@ import {
 	useExplorerSettings,
 	usePathsExplorerQuery
 } from '@sd/explorer';
-import { useRouteTitle, useZodRouteParams } from '@sd/web-core';
+import { useRouteTitle, useZodRouteParams } from '@sd/interface-core';
 import { useMemo } from 'react';
 import { FilePathOrder, SearchFilterArgs, useLibraryMutation, useLibraryQuery } from '@sd/client';
 import { Button } from '@sd/ui';

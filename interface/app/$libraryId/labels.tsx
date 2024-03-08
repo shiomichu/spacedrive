@@ -6,7 +6,7 @@ import {
 	objectOrderingKeysSchema,
 	useExplorerSettings
 } from '@sd/explorer';
-import { Icon, useRouteTitle } from '@sd/web-core';
+import { Icon, useRouteTitle } from '@sd/interface-core';
 import { useMemo } from 'react';
 import { ObjectOrder, useLibraryQuery } from '@sd/client';
 

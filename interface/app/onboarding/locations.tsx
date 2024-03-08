@@ -7,7 +7,7 @@ import {
 	Icon as PhosportIcon,
 	Video
 } from '@phosphor-icons/react';
-import { Icon, TruncatedText, useIsDark, useLocale, useOperatingSystem } from '@sd/web-core';
+import { Icon, TruncatedText, useIsDark, useLocale, useOperatingSystem } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useMemo } from 'react';
 import { Controller, useWatch } from 'react-hook-form';

@@ -1,5 +1,5 @@
 import { Planet } from '@phosphor-icons/react';
-import { Icon, useDropzone, useLocale, useOnDndLeave, usePlatform } from '@sd/web-core';
+import { Icon, useDropzone, useLocale, useOnDndLeave, usePlatform } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useEffect, useRef, useState } from 'react';
 import { proxy } from 'valtio';

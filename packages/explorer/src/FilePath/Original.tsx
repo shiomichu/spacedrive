@@ -6,7 +6,7 @@ import {
 	TextViewer,
 	useLocale,
 	usePlatform
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import clsx from 'clsx';
 import {
 	SyntheticEvent,

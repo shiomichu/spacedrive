@@ -1,7 +1,7 @@
 import closeIconPath from '@sd/assets/svgs/macos_close.svg';
 import fullscreenIconPath from '@sd/assets/svgs/macos_fullscreen.svg';
 import minimizeIconPath from '@sd/assets/svgs/macos_minimize.svg';
-import { useFocusState } from '@sd/web-core';
+import { useFocusState } from '@sd/interface-core';
 import clsx from 'clsx';
 import { ComponentProps, HTMLAttributes, useEffect, useRef } from 'react';
 

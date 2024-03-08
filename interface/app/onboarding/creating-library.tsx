@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { Loader } from '@sd/ui';
 
 import { OnboardingContainer, OnboardingDescription, OnboardingTitle } from './components';

@@ -8,7 +8,7 @@
 // import { Button, Dialog, Select, SelectOption, UseDialogProps, useDialog } from '@sd/ui';
 // import { CheckBox, useZodForm, z } from '@sd/ui/src/forms';
 // import { showAlertDialog } from '~/components';
-// import { usePlatform } from '@sd/web-core';
+// import { usePlatform } from '@sd/interface-core';
 // import { KeyListSelectOptions } from '../../KeyManager/List';
 
 // interface Props extends UseDialogProps {

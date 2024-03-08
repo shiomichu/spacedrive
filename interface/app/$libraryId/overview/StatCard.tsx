@@ -1,5 +1,5 @@
 import { ReactComponent as Ellipsis } from '@sd/assets/svgs/ellipsis.svg';
-import { Icon, useIsDark } from '@sd/web-core';
+import { Icon, useIsDark } from '@sd/interface-core';
 import { useEffect, useMemo, useState } from 'react';
 import { byteSize } from '@sd/client';
 import { Button, Card, CircularProgress, tw } from '@sd/ui';

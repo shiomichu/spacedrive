@@ -1,4 +1,4 @@
-import { i18n, useLocale } from '@sd/web-core';
+import { i18n, useLocale } from '@sd/interface-core';
 import { explorerLayout, useExplorerLayoutStore } from '@sd/client';
 import { RadixCheckbox, Select, SelectOption, Slider, tw, z } from '@sd/ui';
 

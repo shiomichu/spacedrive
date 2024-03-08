@@ -6,7 +6,7 @@ import {
 	useOperatingSystem,
 	useRoutingContext,
 	useShortcut
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import clsx from 'clsx';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router';

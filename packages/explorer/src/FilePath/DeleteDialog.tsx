@@ -1,4 +1,4 @@
-import { Icon, useLocale } from '@sd/web-core';
+import { Icon, useLocale } from '@sd/interface-core';
 import { useLibraryMutation, useZodForm } from '@sd/client';
 import { CheckBox, Dialog, Tooltip, useDialog, UseDialogProps } from '@sd/ui';
 

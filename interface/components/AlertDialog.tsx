@@ -1,5 +1,5 @@
 import { Clipboard } from '@phosphor-icons/react';
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { ReactNode } from 'react';
 import { useZodForm } from '@sd/client';
 import { Button, Dialog, dialogManager, Input, useDialog, UseDialogProps } from '@sd/ui';

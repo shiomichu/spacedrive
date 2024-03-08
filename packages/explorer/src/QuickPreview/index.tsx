@@ -8,7 +8,7 @@ import {
 	X
 } from '@phosphor-icons/react';
 import * as Dialog from '@radix-ui/react-dialog';
-import { useIsDark, useLocale, useOperatingSystem, usePlatform, useShortcut } from '@sd/web-core';
+import { useIsDark, useLocale, useOperatingSystem, usePlatform, useShortcut } from '@sd/interface-core';
 import clsx from 'clsx';
 import {
 	ButtonHTMLAttributes,

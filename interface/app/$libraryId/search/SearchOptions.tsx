@@ -1,6 +1,6 @@
 import { FunnelSimple, Icon, Plus } from '@phosphor-icons/react';
 import { IconTypes } from '@sd/assets/util';
-import { useIsDark, useKeybind } from '@sd/web-core';
+import { useIsDark, useKeybind } from '@sd/interface-core';
 import clsx from 'clsx';
 import { memo, PropsWithChildren, useDeferredValue, useMemo, useState } from 'react';
 import { useLibraryMutation } from '@sd/client';

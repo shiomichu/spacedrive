@@ -1,5 +1,5 @@
 import { ArrowBendUpRight, TagSimple } from '@phosphor-icons/react';
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { useMemo } from 'react';
 import {
 	ExplorerItem,

@@ -1,5 +1,5 @@
 import { useExplorerDroppable, useExplorerSearchParams } from '@sd/explorer';
-import { Icon, useLocale } from '@sd/web-core';
+import { Icon, useLocale } from '@sd/interface-core';
 import clsx from 'clsx';
 import { Link, useMatch } from 'react-router-dom';
 import {

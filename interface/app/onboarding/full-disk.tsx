@@ -1,5 +1,5 @@
 import { fda } from '@sd/assets/videos';
-import { Icon, useLocale, usePlatform } from '@sd/web-core';
+import { Icon, useLocale, usePlatform } from '@sd/interface-core';
 import { useNavigate } from 'react-router';
 import { Button } from '@sd/ui';
 

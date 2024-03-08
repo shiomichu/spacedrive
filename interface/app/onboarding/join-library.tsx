@@ -1,4 +1,4 @@
-import { Icon, useLocale, usePlatform, useRouteTitle } from '@sd/web-core';
+import { Icon, useLocale, usePlatform, useRouteTitle } from '@sd/interface-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { useNavigate } from 'react-router';
 import {

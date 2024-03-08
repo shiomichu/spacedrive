@@ -7,7 +7,7 @@
 // import { useLibraryMutation, useLibraryQuery } from '@sd/client';
 // import { Button, PasswordInput, dialogManager } from '@sd/ui';
 // import { showAlertDialog } from '~/components/AlertDialog';
-// import { usePlatform } from '@sd/web-core';
+// import { usePlatform } from '@sd/interface-core';
 // import KeyList from '../../../KeyManager/List';
 // import KeyMounter from '../../../KeyManager/Mounter';
 // import { Heading } from '../../Layout';

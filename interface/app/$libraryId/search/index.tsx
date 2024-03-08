@@ -8,7 +8,7 @@ import {
 	useExplorerSettings,
 	useObjectsExplorerQuery
 } from '@sd/explorer';
-import { Icon, useRouteTitle } from '@sd/web-core';
+import { Icon, useRouteTitle } from '@sd/interface-core';
 import { useEffect, useMemo } from 'react';
 import { useSearchParams as useRawSearchParams } from 'react-router-dom';
 import { ObjectKindEnum, ObjectOrder } from '@sd/client';

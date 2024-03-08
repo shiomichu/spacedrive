@@ -1,5 +1,5 @@
 import { FolderSimplePlus } from '@phosphor-icons/react';
-import { useCallbackToWatchResize, useLocale, usePlatform } from '@sd/web-core';
+import { useCallbackToWatchResize, useLocale, usePlatform } from '@sd/interface-core';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import { ComponentProps, useRef, useState } from 'react';

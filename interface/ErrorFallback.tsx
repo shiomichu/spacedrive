@@ -1,4 +1,4 @@
-import { useOperatingSystem, usePlatform, useTheme } from '@sd/web-core';
+import { useOperatingSystem, usePlatform, useTheme } from '@sd/interface-core';
 import { PropsWithChildren, useEffect, useState } from 'react';
 import {
 	ErrorBoundary,

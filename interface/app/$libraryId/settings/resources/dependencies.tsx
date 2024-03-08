@@ -1,4 +1,4 @@
-import { usePlatform } from '@sd/web-core';
+import { usePlatform } from '@sd/interface-core';
 import { useQuery } from '@tanstack/react-query';
 import { ScreenHeading } from '@sd/ui';
 

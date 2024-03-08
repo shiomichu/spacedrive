@@ -1,5 +1,5 @@
 import { CaretDown, CaretUp } from '@phosphor-icons/react';
-import { TruncatedText, useShortcut } from '@sd/web-core';
+import { TruncatedText, useShortcut } from '@sd/interface-core';
 import { flexRender, type ColumnSizingState, type Row } from '@tanstack/react-table';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import clsx from 'clsx';

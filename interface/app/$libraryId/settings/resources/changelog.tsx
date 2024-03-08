@@ -1,4 +1,4 @@
-import { useIsDark, useLocale, usePlatform } from '@sd/web-core';
+import { useIsDark, useLocale, usePlatform } from '@sd/interface-core';
 import { useQuery } from '@tanstack/react-query';
 import clsx from 'clsx';
 import Markdown from 'react-markdown';

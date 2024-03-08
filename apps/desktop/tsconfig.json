@@ -9,8 +9,9 @@
 	},
 	"include": ["src"],
 	"references": [
-		{
-			"path": "../../interface"
-		}
+		{ "path": "../../interface" },
+		{ "path": "../../packages/client" },
+		{ "path": "../../packages/ui" },
+		{ "path": "../../packages/interface-core" },
 	]
 }

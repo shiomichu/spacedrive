@@ -1,4 +1,4 @@
-import { useShortcut } from '@sd/web-core';
+import { useShortcut } from '@sd/interface-core';
 import { useGrid } from '@virtual-grid/react';
 import { useEffect, useRef } from 'react';
 import { ExplorerItem } from '@sd/client';

@@ -1,4 +1,4 @@
-import { useOperatingSystem, useShowControls, useWindowState } from '@sd/web-core';
+import { useOperatingSystem, useShowControls, useWindowState } from '@sd/interface-core';
 import clsx from 'clsx';
 import { PropsWithChildren, useEffect } from 'react';
 import { MacTrafficLights } from '~/components';

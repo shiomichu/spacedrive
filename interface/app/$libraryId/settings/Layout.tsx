@@ -1,4 +1,4 @@
-import { useOperatingSystem, useRouteTitle, useWindowState } from '@sd/web-core';
+import { useOperatingSystem, useRouteTitle, useWindowState } from '@sd/interface-core';
 import { PropsWithChildren, ReactNode, Suspense } from 'react';
 import { Outlet } from 'react-router';
 

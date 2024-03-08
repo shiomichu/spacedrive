@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import clsx from 'clsx';
 import { memo, useMemo } from 'react';
 import {

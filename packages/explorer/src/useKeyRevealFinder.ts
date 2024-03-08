@@ -1,4 +1,4 @@
-import { Platform, usePlatform, useShortcut } from '@sd/web-core';
+import { Platform, usePlatform, useShortcut } from '@sd/interface-core';
 import { useMemo } from 'react';
 import { useLibraryContext } from '@sd/client';
 

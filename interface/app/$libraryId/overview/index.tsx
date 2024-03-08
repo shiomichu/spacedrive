@@ -1,4 +1,4 @@
-import { useLocale, useRouteTitle } from '@sd/web-core';
+import { useLocale, useRouteTitle } from '@sd/interface-core';
 import { Link } from 'react-router-dom';
 import { useBridgeQuery, useCache, useLibraryQuery, useNodes } from '@sd/client';
 import { hardwareModelToIcon } from '~/util/hardware';

@@ -5,7 +5,7 @@ import {
 	nonIndexedPathOrderingSchema,
 	useExplorerSettings
 } from '@sd/explorer';
-import { Icon, useLocale, useRouteTitle } from '@sd/web-core';
+import { Icon, useLocale, useRouteTitle } from '@sd/interface-core';
 import { useMemo } from 'react';
 import { useDiscoveredPeers } from '@sd/client';
 

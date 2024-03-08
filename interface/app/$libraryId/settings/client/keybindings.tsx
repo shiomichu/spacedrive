@@ -1,4 +1,4 @@
-import { i18n, Shortcuts, shortcutsStore, useLocale, useOperatingSystem } from '@sd/web-core';
+import { i18n, Shortcuts, shortcutsStore, useLocale, useOperatingSystem } from '@sd/interface-core';
 import { ColumnDef, flexRender, getCoreRowModel, useReactTable } from '@tanstack/react-table';
 import clsx from 'clsx';
 import { useMemo } from 'react';

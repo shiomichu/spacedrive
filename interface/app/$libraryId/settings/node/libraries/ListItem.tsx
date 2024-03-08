@@ -1,5 +1,5 @@
 import { Pencil, Trash } from '@phosphor-icons/react';
-import { Icon, useLocale } from '@sd/web-core';
+import { Icon, useLocale } from '@sd/interface-core';
 import { LibraryConfigWrapped } from '@sd/client';
 import { Button, ButtonLink, Card, dialogManager, Tooltip } from '@sd/ui';
 

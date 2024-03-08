@@ -15,7 +15,7 @@ import {
 	TagSimple,
 	User
 } from '@phosphor-icons/react';
-import { useLocale, useOperatingSystem, usePlatform } from '@sd/web-core';
+import { useLocale, useOperatingSystem, usePlatform } from '@sd/interface-core';
 import { useFeatureFlag } from '@sd/client';
 import { tw } from '@sd/ui';
 

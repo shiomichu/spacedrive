@@ -1,4 +1,4 @@
-import { useRouteTitle } from '@sd/web-core';
+import { useRouteTitle } from '@sd/interface-core';
 import { useMemo } from 'react';
 import { stringify } from 'uuid';
 import {

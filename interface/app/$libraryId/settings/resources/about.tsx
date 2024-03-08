@@ -1,7 +1,7 @@
 import { Globe } from '@phosphor-icons/react';
 import { AppLogo } from '@sd/assets/images';
 import { Discord, Github } from '@sd/assets/svgs/brands';
-import { useLocale, useOperatingSystem, usePlatform } from '@sd/web-core';
+import { useLocale, useOperatingSystem, usePlatform } from '@sd/interface-core';
 import { useBridgeQuery, useDebugStateEnabler } from '@sd/client';
 import { Button, Divider } from '@sd/ui';
 

@@ -1,5 +1,5 @@
 import { Copy, Scissors } from '@phosphor-icons/react';
-import { useKeybindFactory, useLocale } from '@sd/web-core';
+import { useKeybindFactory, useLocale } from '@sd/interface-core';
 import { isNonEmpty } from '@sd/client';
 import { ContextMenu, ModifierKeys } from '@sd/ui';
 

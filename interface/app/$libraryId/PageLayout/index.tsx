@@ -1,4 +1,4 @@
-import { useShowControls } from '@sd/web-core';
+import { useShowControls } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useRef } from 'react';
 import { Outlet } from 'react-router';

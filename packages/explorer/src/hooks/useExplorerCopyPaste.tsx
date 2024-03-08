@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { getIndexedItemFilePath, libraryClient, useLibraryMutation } from '@sd/client';
 import { toast } from '@sd/ui';
 

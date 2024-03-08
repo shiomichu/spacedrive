@@ -1,4 +1,4 @@
-import { useScrolled } from '@sd/web-core';
+import { useScrolled } from '@sd/interface-core';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import clsx from 'clsx';
 import { useRef } from 'react';

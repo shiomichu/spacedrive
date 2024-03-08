@@ -1,5 +1,5 @@
 import { createMemoryHistory } from '@remix-run/router';
-import { KeybindEvent, PlatformProvider, RouteTitleContext, useLocale } from '@sd/web-core';
+import { KeybindEvent, PlatformProvider, RouteTitleContext, useLocale } from '@sd/interface-core';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { listen } from '@tauri-apps/api/event';
 import { PropsWithChildren, startTransition, useEffect, useMemo, useRef, useState } from 'react';

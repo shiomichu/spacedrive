@@ -1,4 +1,4 @@
-import { useOperatingSystem } from '@sd/web-core';
+import { useOperatingSystem } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useEffect } from 'react';
 import { useMatch, useNavigate } from 'react-router';

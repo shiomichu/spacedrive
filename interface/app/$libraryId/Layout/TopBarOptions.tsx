@@ -9,7 +9,7 @@ import {
 	Tag
 } from '@phosphor-icons/react';
 import { explorerStore, OptionsPanel, useExplorerContext } from '@sd/explorer';
-import { useKeyMatcher, useLocale } from '@sd/web-core';
+import { useKeyMatcher, useLocale } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useMemo } from 'react';
 import { useDocumentEventListener } from 'rooks';

@@ -1,4 +1,4 @@
-import { i18n, Icon, useDebouncedFormWatch, useLocale, usePlatform } from '@sd/web-core';
+import { i18n, Icon, useDebouncedFormWatch, useLocale, usePlatform } from '@sd/interface-core';
 import clsx from 'clsx';
 import { Controller, FormProvider } from 'react-hook-form';
 import {

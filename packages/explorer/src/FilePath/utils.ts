@@ -1,4 +1,4 @@
-import { useCallbackToWatchResize } from '@sd/web-core';
+import { useCallbackToWatchResize } from '@sd/interface-core';
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
 
 import { useExplorerContext } from '../Context';

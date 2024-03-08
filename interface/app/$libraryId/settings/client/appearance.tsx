@@ -1,5 +1,5 @@
 import { CheckCircle } from '@phosphor-icons/react';
-import { useLocale, usePlatform } from '@sd/web-core';
+import { useLocale, usePlatform } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 import { Themes, unitFormatStore, useThemeStore, useUnitFormatStore, useZodForm } from '@sd/client';

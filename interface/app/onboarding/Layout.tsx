@@ -1,6 +1,6 @@
 import { BloomOne } from '@sd/assets/images';
 import { introvideobg, introvideobgmp4, sdintro, sdintromp4 } from '@sd/assets/videos';
-import { useOperatingSystem, useWindowSize } from '@sd/web-core';
+import { useOperatingSystem, useWindowSize } from '@sd/interface-core';
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';

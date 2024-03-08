@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { useMemo, useState } from 'react';
 import { useDebounce } from 'use-debounce';
 import { useCache, useLibraryQuery, useNodes } from '@sd/client';

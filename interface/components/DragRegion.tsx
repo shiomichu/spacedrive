@@ -1,4 +1,4 @@
-import { useOperatingSystem } from '@sd/web-core';
+import { useOperatingSystem } from '@sd/interface-core';
 import { forwardRef, PropsWithChildren } from 'react';
 import { cx } from '@sd/ui';
 

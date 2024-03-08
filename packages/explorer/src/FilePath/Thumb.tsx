@@ -1,5 +1,5 @@
 import { getIcon, getIconByName } from '@sd/assets/util';
-import { pdfViewerEnabled, useIsDark, usePlatform } from '@sd/web-core';
+import { pdfViewerEnabled, useIsDark, usePlatform } from '@sd/interface-core';
 import clsx from 'clsx';
 import {
 	forwardRef,

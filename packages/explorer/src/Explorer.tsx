@@ -1,5 +1,5 @@
 import { FolderNotchOpen } from '@phosphor-icons/react';
-import { useShortcut } from '@sd/web-core';
+import { useShortcut } from '@sd/interface-core';
 import { CSSProperties, type PropsWithChildren, type ReactNode } from 'react';
 import {
 	explorerLayout,

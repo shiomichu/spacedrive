@@ -1,5 +1,5 @@
 import { Plus } from '@phosphor-icons/react';
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { useMemo, type PropsWithChildren } from 'react';
 import { ExplorerItem, isNonEmpty } from '@sd/client';
 import { ContextMenu } from '@sd/ui';

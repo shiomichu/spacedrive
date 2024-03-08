@@ -1,5 +1,5 @@
 import { initRspc, wsBatchLink, type AlphaClient } from '@oscartbeaumont-sd/rspc-client/v2';
-import { Platform, PlatformProvider, usePlatform, useRoutingContext } from '@sd/web-core';
+import { Platform, PlatformProvider, usePlatform, useRoutingContext } from '@sd/interface-core';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useEffect, useMemo, useState } from 'react';
 import {
@@ -43,7 +43,7 @@ import { RootContext } from './RootContext';
 
 import './style.scss';
 
-import { useZodRouteParams } from '@sd/web-core';
+import { useZodRouteParams } from '@sd/interface-core';
 
 // NOTE: all route `Layout`s below should contain
 // the `usePlausiblePageViewMonitor` hook, as early as possible (ideally within the layout itself).

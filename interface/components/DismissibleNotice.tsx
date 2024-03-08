@@ -2,7 +2,7 @@ import {
 	dismissibleNoticeStore,
 	getDismissibleNoticeStore,
 	useDismissibleNoticeStore
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import clsx from 'clsx';
 import { ReactNode } from 'react';
 import { Button } from '@sd/ui';

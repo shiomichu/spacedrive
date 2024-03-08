@@ -1,5 +1,5 @@
 import { Info } from '@phosphor-icons/react';
-import { usePlatform } from '@sd/web-core';
+import { usePlatform } from '@sd/interface-core';
 import clsx from 'clsx';
 import { PropsWithChildren } from 'react';
 import { ErrorMessage, Tooltip } from '@sd/ui';

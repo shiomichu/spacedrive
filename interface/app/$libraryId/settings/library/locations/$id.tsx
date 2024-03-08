@@ -1,5 +1,5 @@
 import { Archive, ArrowsClockwise, Info, Trash } from '@phosphor-icons/react';
-import { useLocale, useZodRouteParams } from '@sd/web-core';
+import { useLocale, useZodRouteParams } from '@sd/interface-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { Suspense } from 'react';
 import { Controller } from 'react-hook-form';

@@ -4,5 +4,9 @@
 		"rootDir": "src",
 		"declarationDir": "dist"
 	},
-	"include": ["src"]
+	"include": ["src"],
+	"references": [
+		{ "path": "../client" },
+		{ "path": "../ui" }
+	]
 }

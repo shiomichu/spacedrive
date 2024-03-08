@@ -1,4 +1,4 @@
-import { useRouteTitle } from '@sd/web-core';
+import { useRouteTitle } from '@sd/interface-core';
 import { auth, useLibraryContext, useLibraryMutation, useLibraryQuery } from '@sd/client';
 import { Button } from '@sd/ui';
 import { AuthRequiredOverlay } from '~/components/AuthRequiredOverlay';

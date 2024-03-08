@@ -1,4 +1,4 @@
-import { useZodSearchParams } from '@sd/web-core';
+import { useZodSearchParams } from '@sd/interface-core';
 import { useMemo } from 'react';
 import { ExplorerItem, getExplorerItemData, useSelector } from '@sd/client';
 import { z } from '@sd/ui';

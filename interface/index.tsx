@@ -1,4 +1,4 @@
-import { i18n, RouterContext, RoutingContext, useTheme, WithPrismTheme } from '@sd/web-core';
+import { i18n, RouterContext, RoutingContext, useTheme, WithPrismTheme } from '@sd/interface-core';
 import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import duration from 'dayjs/plugin/duration';

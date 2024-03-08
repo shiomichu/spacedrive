@@ -1,4 +1,4 @@
-import { Icon } from '@sd/web-core';
+import { Icon } from '@sd/interface-core';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';

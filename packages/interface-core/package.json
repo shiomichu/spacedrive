@@ -1,5 +1,6 @@
 {
-	"name": "@sd/web-core",
+	"name": "@sd/interface-core",
+	"description": "A bunch of stuff used by the explorer and interface that don't really belong in the explorer",
 	"main": "src/index.ts",
 	"types": "src/index.ts",
 	"dependencies": {

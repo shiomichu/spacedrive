@@ -97,12 +97,12 @@ importers:
       '@sd/interface':
         specifier: workspace:*
         version: link:../../interface
+      '@sd/interface-core':
+        specifier: workspace:^
+        version: link:../../packages/interface-core
       '@sd/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@sd/web-core':
-        specifier: workspace:^
-        version: link:../../packages/web-core
       '@t3-oss/env-core':
         specifier: ^0.7.1
         version: 0.7.3(typescript@5.3.3)(zod@3.22.4)
@@ -601,9 +601,9 @@ importers:
       '@sd/interface':
         specifier: workspace:*
         version: link:../../interface
-      '@sd/web-core':
+      '@sd/interface-core':
         specifier: workspace:^
-        version: link:../../packages/web-core
+        version: link:../../packages/interface-core
       '@tanstack/react-query':
         specifier: ^4.36.1
         version: 4.36.1(react-dom@18.2.0)(react-native@0.73.4)(react@18.2.0)
@@ -707,12 +707,12 @@ importers:
       '@sd/explorer':
         specifier: workspace:^
         version: link:../packages/explorer
+      '@sd/interface-core':
+        specifier: workspace:^
+        version: link:../packages/interface-core
       '@sd/ui':
         specifier: workspace:*
         version: link:../packages/ui
-      '@sd/web-core':
-        specifier: workspace:^
-        version: link:../packages/web-core
       '@sentry/browser':
         specifier: ^7.74.1
         version: 7.103.0
@@ -1003,12 +1003,30 @@ importers:
       '@sd/client':
         specifier: workspace:^
         version: link:../client
+      '@sd/interface-core':
+        specifier: workspace:^
+        version: link:../interface-core
       '@sd/ui':
         specifier: workspace:^
         version: link:../ui
-      '@sd/web-core':
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+
+  packages/interface-core:
+    dependencies:
+      '@phosphor-icons/react':
+        specifier: ^2.0.15
+        version: 2.0.15(react-dom@18.2.0)(react@18.2.0)
+      '@sd/assets':
         specifier: workspace:^
-        version: link:../web-core
+        version: link:../assets
+      '@sd/client':
+        specifier: workspace:^
+        version: link:../client
+      '@sd/ui':
+        specifier: workspace:^
+        version: link:../ui
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -1139,24 +1157,6 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
-
-  packages/web-core:
-    dependencies:
-      '@phosphor-icons/react':
-        specifier: ^2.0.15
-        version: 2.0.15(react-dom@18.2.0)(react@18.2.0)
-      '@sd/assets':
-        specifier: workspace:^
-        version: link:../assets
-      '@sd/client':
-        specifier: workspace:^
-        version: link:../client
-      '@sd/ui':
-        specifier: workspace:^
-        version: link:../ui
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
 
   scripts:
     dependencies:

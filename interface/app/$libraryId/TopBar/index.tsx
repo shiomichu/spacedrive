@@ -7,7 +7,7 @@ import {
 	useRoutingContext,
 	useShortcut,
 	useShowControls
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import clsx from 'clsx';
 import { useLayoutEffect, useRef } from 'react';
 import useResizeObserver from 'use-resize-observer';

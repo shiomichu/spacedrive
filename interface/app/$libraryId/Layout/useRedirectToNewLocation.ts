@@ -1,5 +1,5 @@
 import { explorerStore } from '@sd/explorer';
-import { useZodRouteParams } from '@sd/web-core';
+import { useZodRouteParams } from '@sd/interface-core';
 import { useNavigate } from 'react-router';
 import { useLibraryQuery, useSelector } from '@sd/client';
 

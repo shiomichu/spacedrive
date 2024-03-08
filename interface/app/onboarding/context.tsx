@@ -1,4 +1,4 @@
-import { i18n, usePlatform } from '@sd/web-core';
+import { i18n, usePlatform } from '@sd/interface-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { createContext, useContext } from 'react';
 import { useNavigate } from 'react-router';

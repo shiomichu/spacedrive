@@ -1,4 +1,4 @@
-import { Platform, useLocale, usePlatform } from '@sd/web-core';
+import { Platform, useLocale, usePlatform } from '@sd/interface-core';
 import { useQuery } from '@tanstack/react-query';
 import { Suspense } from 'react';
 import { useLibraryContext } from '@sd/client';

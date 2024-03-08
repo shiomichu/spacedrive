@@ -1,4 +1,4 @@
-import { ColorPicker, useLocale } from '@sd/web-core';
+import { ColorPicker, useLocale } from '@sd/interface-core';
 import {
 	FilePath,
 	Object,

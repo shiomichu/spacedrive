@@ -12,7 +12,7 @@ import {
 	Icon as PhosphorIcon,
 	Snowflake
 } from '@phosphor-icons/react';
-import { Folder, Icon, useLocale, useZodRouteParams } from '@sd/web-core';
+import { Folder, Icon, useLocale, useZodRouteParams } from '@sd/interface-core';
 import clsx from 'clsx';
 import dayjs from 'dayjs';
 import {

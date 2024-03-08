@@ -4,7 +4,7 @@
 // import { Button, Dialog, Tooltip, UseDialogProps, useDialog } from '@sd/ui';
 // import { PasswordInput, Switch, useZodForm, z } from '@sd/ui/src/forms';
 // import { showAlertDialog } from '~/components';
-// import { usePlatform } from '@sd/web-core';
+// import { usePlatform } from '@sd/interface-core';
 
 // const schema = z.object({
 // 	type: z.union([z.literal('password'), z.literal('key')]),

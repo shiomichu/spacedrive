@@ -1,4 +1,4 @@
-import { Platform, PlatformProvider, useShowControls } from '@sd/web-core';
+import { Platform, PlatformProvider, useShowControls } from '@sd/interface-core';
 import { hydrate, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useEffect, useRef, useState } from 'react';
 import { createBrowserRouter } from 'react-router-dom';

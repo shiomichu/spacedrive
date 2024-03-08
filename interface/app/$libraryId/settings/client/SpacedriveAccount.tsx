@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { auth, useBridgeQuery } from '@sd/client';
 import { Button, Card } from '@sd/ui';
 import { AuthRequiredOverlay } from '~/components/AuthRequiredOverlay';

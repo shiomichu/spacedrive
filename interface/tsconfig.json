@@ -9,5 +9,10 @@
 	},
 	"include": ["**/*"],
 	"exclude": ["dist"],
-	"references": [{ "path": "../packages/ui" }, { "path": "../packages/client" }]
+	"references": [
+		{ "path": "../packages/ui" },
+		{ "path": "../packages/client" },
+		{ "path": "../packages/explorer" },
+		{ "path": "../packages/interface-core" }
+	]
 }

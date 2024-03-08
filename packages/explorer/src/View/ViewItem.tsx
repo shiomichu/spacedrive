@@ -1,4 +1,4 @@
-import { usePlatform } from '@sd/web-core';
+import { usePlatform } from '@sd/interface-core';
 import { useCallback, type HTMLAttributes, type PropsWithChildren } from 'react';
 import {
 	createSearchParams,

@@ -7,7 +7,7 @@ import {
 	useExplorerSettings,
 	useObjectsExplorerQuery
 } from '@sd/explorer';
-import { Icon, useRouteTitle, useZodRouteParams } from '@sd/web-core';
+import { Icon, useRouteTitle, useZodRouteParams } from '@sd/interface-core';
 import { useMemo } from 'react';
 import { ObjectKindEnum, ObjectOrder, useCache, useLibraryQuery, useNodes } from '@sd/client';
 import { LocationIdParamsSchema } from '~/app/route-schemas';

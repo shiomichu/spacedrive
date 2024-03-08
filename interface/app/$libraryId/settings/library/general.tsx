@@ -1,4 +1,4 @@
-import { useDebouncedFormWatch, useLocale } from '@sd/web-core';
+import { useDebouncedFormWatch, useLocale } from '@sd/interface-core';
 import { MaybeUndefined, useBridgeMutation, useLibraryContext, useZodForm } from '@sd/client';
 import { Button, dialogManager, Form, InputField, Switch, Tooltip, z } from '@sd/ui';
 

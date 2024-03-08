@@ -1,5 +1,5 @@
 import { Gear } from '@phosphor-icons/react';
-import { useKeysMatcher, useLocale, usePlatform, useShortcut } from '@sd/web-core';
+import { useKeysMatcher, useLocale, usePlatform, useShortcut } from '@sd/interface-core';
 import { useNavigate } from 'react-router';
 import { JobManagerContextProvider, useClientContext, useDebugState } from '@sd/client';
 import { Button, ButtonLink, Popover, Tooltip, usePopover } from '@sd/ui';

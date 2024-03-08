@@ -1,5 +1,5 @@
 import { explorerStore } from '@sd/explorer';
-import { Accordion, Icon, useCallbackToWatchForm, useLocale, usePlatform } from '@sd/web-core';
+import { Accordion, Icon, useCallbackToWatchForm, useLocale, usePlatform } from '@sd/interface-core';
 import { useCallback, useEffect, useMemo } from 'react';
 import { Controller, get } from 'react-hook-form';
 import { useDebouncedCallback } from 'use-debounce';

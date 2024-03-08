@@ -1,4 +1,4 @@
-import { Loader, useKeyMatcher, useRoutingContext, useShortcut } from '@sd/web-core';
+import { Loader, useKeyMatcher, useRoutingContext, useShortcut } from '@sd/interface-core';
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useKeys } from 'rooks';

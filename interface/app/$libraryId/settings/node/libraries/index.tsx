@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { useBridgeQuery, useCache, useLibraryContext, useNodes } from '@sd/client';
 import { Button, dialogManager } from '@sd/ui';
 

@@ -6,7 +6,7 @@ import {
 	useShowControls,
 	useWindowState,
 	useZodRouteParams
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import clsx from 'clsx';
 import { Suspense, useEffect, useMemo, useRef } from 'react';
 import { Navigate, Outlet, useNavigate } from 'react-router-dom';

@@ -1,5 +1,5 @@
 import { Info, Trash } from '@phosphor-icons/react';
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import clsx from 'clsx';
 import { ChangeEvent, useCallback, useEffect, useId } from 'react';
 import { createPortal } from 'react-dom';

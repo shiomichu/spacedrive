@@ -1,5 +1,5 @@
 import { Check, Trash, X } from '@phosphor-icons/react';
-import { useIsDark, useLocale } from '@sd/web-core';
+import { useIsDark, useLocale } from '@sd/interface-core';
 import { useQueryClient } from '@tanstack/react-query';
 import dayjs from 'dayjs';
 import { useState } from 'react';

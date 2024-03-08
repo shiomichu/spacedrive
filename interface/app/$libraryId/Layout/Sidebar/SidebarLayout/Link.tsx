@@ -1,4 +1,4 @@
-import { useOperatingSystem, usePlatform } from '@sd/web-core';
+import { useOperatingSystem, usePlatform } from '@sd/interface-core';
 import { cva } from 'class-variance-authority';
 import clsx from 'clsx';
 import { forwardRef, PropsWithChildren, useEffect } from 'react';

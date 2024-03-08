@@ -1,5 +1,5 @@
 import { Pencil, Plus, Trash } from '@phosphor-icons/react';
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { PropsWithChildren } from 'react';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';

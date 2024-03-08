@@ -4,7 +4,7 @@ import {
 	ExplorerContextProvider,
 	useExplorerSettings
 } from '@sd/explorer';
-import { Icon, useRouteTitle, useZodRouteParams } from '@sd/web-core';
+import { Icon, useRouteTitle, useZodRouteParams } from '@sd/interface-core';
 import { useMemo } from 'react';
 import { useBridgeQuery, useLibraryQuery } from '@sd/client';
 import { NodeIdParamsSchema } from '~/app/route-schemas';

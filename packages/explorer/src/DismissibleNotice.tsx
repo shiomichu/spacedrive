@@ -5,7 +5,7 @@ import {
 	Icon,
 	useDismissibleNoticeStore,
 	useLocale
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import clsx from 'clsx';
 import { ReactNode } from 'react';
 import { ExplorerLayout } from '@sd/client';

@@ -8,7 +8,7 @@ import {
 	Share,
 	ShieldCheck
 } from '@phosphor-icons/react';
-import { keybindForOs, useLocale, useOperatingSystem } from '@sd/web-core';
+import { keybindForOs, useLocale, useOperatingSystem } from '@sd/interface-core';
 import { PropsWithChildren } from 'react';
 import { useLibraryMutation, useSelector } from '@sd/client';
 import { ContextMenu as CM, ModifierKeys, toast } from '@sd/ui';

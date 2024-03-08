@@ -7,7 +7,7 @@ import {
 	useExplorerSettings,
 	useObjectsExplorerQuery
 } from '@sd/explorer';
-import { Icon, useRouteTitle } from '@sd/web-core';
+import { Icon, useRouteTitle } from '@sd/interface-core';
 import { useMemo } from 'react';
 import { ObjectKindEnum, ObjectOrder, SearchFilterArgs } from '@sd/client';
 

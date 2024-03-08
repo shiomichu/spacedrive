@@ -7,7 +7,7 @@ import {
 	Tag,
 	Textbox
 } from '@phosphor-icons/react';
-import { Icon as SDIcon } from '@sd/web-core';
+import { Icon as SDIcon } from '@sd/interface-core';
 import { useState } from 'react';
 import {
 	InOrNotIn,

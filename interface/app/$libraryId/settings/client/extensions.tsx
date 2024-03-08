@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { Button, Card, GridLayout, SearchInput } from '@sd/ui';
 
 import { Heading } from '../Layout';

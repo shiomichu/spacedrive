@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { Input, Switch } from '@sd/ui';
 
 import { Heading } from '../Layout';

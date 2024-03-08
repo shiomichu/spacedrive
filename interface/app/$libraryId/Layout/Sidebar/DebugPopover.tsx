@@ -1,5 +1,5 @@
 import { CheckSquare } from '@phosphor-icons/react';
-import { toggleRenderRects, usePlatform } from '@sd/web-core';
+import { toggleRenderRects, usePlatform } from '@sd/interface-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { useNavigate } from 'react-router';
 import {

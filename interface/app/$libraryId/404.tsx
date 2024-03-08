@@ -1,4 +1,4 @@
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { useNavigate } from 'react-router';
 import { Button } from '@sd/ui';
 

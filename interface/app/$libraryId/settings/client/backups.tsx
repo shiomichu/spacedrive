@@ -1,4 +1,4 @@
-import { Database, useLocale, usePlatform } from '@sd/web-core';
+import { Database, useLocale, usePlatform } from '@sd/interface-core';
 import dayjs from 'dayjs';
 import { useBridgeMutation, useBridgeQuery, useLibraryMutation } from '@sd/client';
 import { Button, Card } from '@sd/ui';

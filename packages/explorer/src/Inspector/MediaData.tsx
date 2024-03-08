@@ -1,4 +1,4 @@
-import { Accordion, Platform, useLocale, usePlatform } from '@sd/web-core';
+import { Accordion, Platform, useLocale, usePlatform } from '@sd/interface-core';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat'; // import plugin
 

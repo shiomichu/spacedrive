@@ -1,4 +1,4 @@
-import { useOperatingSystem, useShortcut } from '@sd/web-core';
+import { useOperatingSystem, useShortcut } from '@sd/interface-core';
 import clsx from 'clsx';
 import {
 	forwardRef,

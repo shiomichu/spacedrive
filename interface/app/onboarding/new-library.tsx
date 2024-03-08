@@ -1,4 +1,4 @@
-import { Icon, useLocale, useOperatingSystem } from '@sd/web-core';
+import { Icon, useLocale, useOperatingSystem } from '@sd/interface-core';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useFeatureFlag } from '@sd/client';

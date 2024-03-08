@@ -1,4 +1,4 @@
-import { useIsDark, useOperatingSystem } from '@sd/web-core';
+import { useIsDark, useOperatingSystem } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useLayoutEffect, useState } from 'react';
 import { ModifierKeys, Popover, Tooltip, usePopover } from '@sd/ui';

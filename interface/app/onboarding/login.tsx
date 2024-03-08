@@ -1,5 +1,5 @@
 import { AppLogo } from '@sd/assets/images';
-import { useLocale } from '@sd/web-core';
+import { useLocale } from '@sd/interface-core';
 import { useNavigate } from 'react-router';
 import { auth, useBridgeQuery } from '@sd/client';
 import { Button, ButtonLink, Loader } from '@sd/ui';

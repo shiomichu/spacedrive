@@ -1,4 +1,4 @@
-import { usePlatform } from '@sd/web-core';
+import { usePlatform } from '@sd/interface-core';
 import clsx from 'clsx';
 import { auth } from '@sd/client';
 import { Button, ButtonProps } from '@sd/ui';

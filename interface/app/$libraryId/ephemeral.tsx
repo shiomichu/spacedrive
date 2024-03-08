@@ -21,7 +21,7 @@ import {
 	useOperatingSystem,
 	useRouteTitle,
 	useZodSearchParams
-} from '@sd/web-core';
+} from '@sd/interface-core';
 import clsx from 'clsx';
 import { memo, Suspense, useDeferredValue, useMemo } from 'react';
 import {

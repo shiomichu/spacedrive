@@ -1,4 +1,4 @@
-import { useIsDark } from '@sd/web-core';
+import { useIsDark } from '@sd/interface-core';
 import clsx from 'clsx';
 
 import classes from './Thumb.module.scss';

@@ -1,4 +1,4 @@
-import { i18n, useLocale } from '@sd/web-core';
+import { i18n, useLocale } from '@sd/interface-core';
 import clsx from 'clsx';
 import { Controller } from 'react-hook-form';
 import { auth, useBridgeMutation, useZodForm } from '@sd/client';

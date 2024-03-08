@@ -1,5 +1,5 @@
 import { iconNames } from '@sd/assets/util';
-import { Icon, useCounter, useLocale } from '@sd/web-core';
+import { Icon, useCounter, useLocale } from '@sd/interface-core';
 import { memo, useEffect, useMemo, useState } from 'react';
 import { byteSize, useDiscoveredPeers, useLibraryQuery, useNodes } from '@sd/client';
 import { Card } from '@sd/ui';

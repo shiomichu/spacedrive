@@ -1,5 +1,5 @@
 import { Info } from '@phosphor-icons/react';
-import { useCounter } from '@sd/web-core';
+import { useCounter } from '@sd/interface-core';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 import { byteSize, Statistics, useLibraryContext, useLibraryQuery } from '@sd/client';

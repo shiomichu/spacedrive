@@ -1,4 +1,4 @@
-import { Icon, useLocale } from '@sd/web-core';
+import { Icon, useLocale } from '@sd/interface-core';
 import { Button, Tooltip } from '@sd/ui';
 
 export function KeyManager() {

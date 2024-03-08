@@ -1,4 +1,4 @@
-import { useLocale, usePlatform } from '@sd/web-core';
+import { useLocale, usePlatform } from '@sd/interface-core';
 import { useQueryClient } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
 import {
