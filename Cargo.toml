@@ -43,7 +43,7 @@ tracing-appender = "0.2.3"
 
 rspc = { version = "0.1.4" }
 specta = { version = "=2.0.0-rc.7" }
-tauri-specta = { version = "=2.0.0-rc.4" }
+tauri-specta = { git = "https://github.com/oscartbeaumont/tauri-specta.git", branch = "tauri2-alpha18" }
 
 swift-rs = { version = "1.0.6" }
 
@@ -92,7 +92,7 @@ if-watch = { git = "https://github.com/oscartbeaumont/if-watch.git", rev = "a92c
 rspc = { git = "https://github.com/spacedriveapp/rspc.git", rev = "f3347e2e8bfe3f37bfacc437ca329fe71cdcb048" }
 
 # `cursor_position` method
-tauri = { git = "https://github.com/spacedriveapp/tauri.git", rev = "8409af71a83d631ff9d1cd876c441a57511a1cbd" }
+tauri = { git = "https://github.com/spacedriveapp/tauri.git", branch = "v2.0.0-beta-13" }
 tao = { git = "https://github.com/spacedriveapp/tao", rev = "7880adbc090402c44fbcf006669458fa82623403" }
 
 # Add `Control::open_stream_with_addrs`

@@ -1,7 +1,7 @@
 import { dialog, invoke, os, shell } from '@tauri-apps/api';
-import { confirm } from '@tauri-apps/api/dialog';
+import { confirm } from '@tauri-apps/plugin-dialog';
 import { homeDir } from '@tauri-apps/api/path';
-import { open } from '@tauri-apps/api/shell';
+import { open } from '@tauri-apps/plugin-shell';
 // @ts-expect-error: Doesn't have a types package.
 import ConsistentHash from 'consistent-hash';
 import { OperatingSystem, Platform } from '@sd/interface';
