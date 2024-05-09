@@ -34,7 +34,6 @@ import {
 	humanizeSize,
 	NonIndexedPathItem,
 	Object,
-	ObjectKindEnum,
 	ObjectWithFilePaths,
 	useBridgeQuery,
 	useItemsAsObjects,
@@ -102,9 +101,14 @@ export const Inspector = forwardRef<HTMLDivElement, Props>(
 
 		const { t } = useLocale();
 		return (
-			<div ref={ref} style={{ width: INSPECTOR_WIDTH, ...style }} {...props}>
+			<div
+				className="inspectorscroll"
+				ref={ref}
+				style={{ width: INSPECTOR_WIDTH, ...style }}
+				{...props}
+			>
 				<Sticky
-					scrollElement={explorer.scrollRef.current || undefined}
+					scrollElement={'.inspectorscroll'}
 					stickyClassName="!top-[40px]"
 					topOffset={-40}
 				>

@@ -1,5 +1,4 @@
 import { FolderNotchOpen } from '@phosphor-icons/react';
-import { CSSProperties, type PropsWithChildren, type ReactNode } from 'react';
 import {
 	explorerLayout,
 	useExplorerLayoutStore,
@@ -7,6 +6,7 @@ import {
 	useRspcLibraryContext,
 	useSelector
 } from '@sd/client';
+import { CSSProperties, type PropsWithChildren, type ReactNode } from 'react';
 import { useShortcut } from '~/hooks';
 
 import { useTopBarContext } from '../TopBar/Context';
