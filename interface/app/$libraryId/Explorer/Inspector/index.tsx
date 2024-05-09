@@ -102,13 +102,11 @@ export const Inspector = forwardRef<HTMLDivElement, Props>(
 		const { t } = useLocale();
 		return (
 			<div
-				className="inspectorscroll"
 				ref={ref}
 				style={{ width: INSPECTOR_WIDTH, ...style }}
 				{...props}
 			>
 				<Sticky
-					scrollElement={'.inspectorscroll'}
 					stickyClassName="!top-[40px]"
 					topOffset={-40}
 				>
