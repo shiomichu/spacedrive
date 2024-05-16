@@ -32,6 +32,8 @@ export const ContextMenu = ({
 			<CM.Item
 				onClick={async () => {
 					try {
+						console.log(platform)
+						// dialog opens here
 						const path = await openDirectoryPickerDialog(platform);
 						if (path !== '') {
 							dialogManager.create((dp) => (
@@ -51,7 +53,7 @@ export const ContextMenu = ({
 			/>
 			<CM.Item
 				onClick={() => {
-					navigate(`settings/library/locations/${locationId}`);
+					navigate(`./settings/library/locations/${locationId}`);
 				}}
 				icon={Pencil}
 				label={t('edit')}

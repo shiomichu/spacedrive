@@ -66,7 +66,7 @@ const Root = (props: PropsWithChildren<DropdownMenuProps>) => {
 
 	return (
 		<RadixDM.Root onOpenChange={onOpenChange}>
-			<RadixDM.Trigger ref={measureRef} className={triggerClassName} asChild={asChild}>
+			<RadixDM.Trigger ref={measureRef} className={triggerClassName} asChild={true}>
 				{trigger}
 			</RadixDM.Trigger>
 			<RadixDM.Portal>
@@ -146,7 +146,6 @@ const Item = ({
 	const ref = useRef<HTMLDivElement>(null);
 
 	const renderInner = (
-		// to style this, pass in variant
 		<ContextMenuDivItem
 			className={clsx(selected && 'bg-accent text-white')}
 			{...{ icon, iconProps, label, keybind, variant, children }}

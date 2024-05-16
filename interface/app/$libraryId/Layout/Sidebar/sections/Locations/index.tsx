@@ -11,7 +11,6 @@ import { useExplorerSearchParams } from '~/app/$libraryId/Explorer/util';
 import { AddLocationButton } from '~/app/$libraryId/settings/library/locations/AddLocationButton';
 import { Icon, SubtleButton } from '~/components';
 import { useLocale } from '~/hooks';
-
 import SidebarLink from '../../SidebarLayout/Link';
 import Section from '../../SidebarLayout/Section';
 import { SeeMore } from '../../SidebarLayout/SeeMore';

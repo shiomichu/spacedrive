@@ -1,9 +1,7 @@
-import { Link } from 'react-router-dom';
-import { useBridgeQuery, useLibraryQuery } from '@sd/client';
+import { arraysEqual, useBridgeQuery, useLibraryQuery } from '@sd/client';
 import { useLocale, useOperatingSystem } from '~/hooks';
 import { useRouteTitle } from '~/hooks/useRouteTitle';
 import { hardwareModelToIcon } from '~/util/hardware';
-
 import { SearchContextProvider, useSearchFromSearchParams } from '../search';
 import SearchBar from '../search/SearchBar';
 import { AddLocationButton } from '../settings/library/locations/AddLocationButton';
@@ -14,6 +12,7 @@ import OverviewSection from './Layout/Section';
 import LibraryStatistics from './LibraryStats';
 import NewCard from './NewCard';
 import StatisticItem from './StatCard';
+import LocationMenu from './LocationMenu';
 
 export const Component = () => {
 	useRouteTitle('Overview');
@@ -88,9 +87,10 @@ export const Component = () => {
 								totalSpace={
 									stats.data?.statistics?.total_local_bytes_capacity || '0'
 								}
+								connectionType={null}
 								freeSpace={stats.data?.statistics?.total_local_bytes_free || '0'}
 								color="#0362FF"
-								connectionType={null}
+								devices={true}
 							/>
 						)}
 						{/* <StatisticItem
@@ -144,15 +144,18 @@ export const Component = () => {
 
 					<OverviewSection count={locations.length} title={t('locations')}>
 						{locations?.map((item) => (
-							<Link key={item.id} to={`../location/${item.id}`}>
 								<StatisticItem
+									key={item.id}
 									name={item.name || t('unnamed_location')}
 									icon="Folder"
 									totalSpace={item.size_in_bytes || [0]}
 									color="#0362FF"
 									connectionType={null}
+									link={`../location/${item.id}`}
+									right={
+									<LocationMenu id={item.id}></LocationMenu>
+									}
 								/>
-							</Link>
 						))}
 						{!locations?.length && (
 							<NewCard
